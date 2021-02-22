@@ -1,0 +1,670 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Coral</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Nunito Sans Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+
+</head>
+
+<body>
+    <div class='top'></div>
+
+    <!------------------------------------------------HEADER-->
+    <header class="header">
+
+        <!-------------------------LOGO-->
+        <img src="images/logo.png" alt="" class="header__logo">
+
+        <!-------------------------NAVIGATION-->
+        <div class="header__nav">
+            <ul class="header__nav--list">
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link active">Home</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">About</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">Platform</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">Plans</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">News</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-------------------------USER SECTION-->
+        <div class="header__user">
+            <!--------Search-->
+            <div class="search">
+                <a href="https://www.linkedin.com/company/coral/" class="linkedin linkedin-header" target="_blank">
+                    <svg>
+                        <use xlink:href="/images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="line"></div>
+            <!--------Login Area-->
+            <div class="login">
+                <a href="#" class="btn btn-primary">Login</a>
+            </div>
+        </div>
+
+        <!------------------------------------------------Responsive Navigation-->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a>
+                    </li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>About</a>
+                    </li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Platform</a>
+                    </li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Plans</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>News</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!------------------------------------------------JUMBOTRON-->
+    <div class="jumbotron">
+        <div class="overlay"></div>
+        <img src="images/test.png" alt="" class="jumbotron-img">
+
+        <!-- <img src="images/slider-3-cloud.png" alt="" class="jumbotron-cloud"> -->
+        <img src="images/slider-3-cloud.png" alt="" class="jumbotron-cloud2">
+        <img src="images/slider-3-line.png" alt="" class="jumbotron-line">
+        <!-- <img src="images/slider-3-shape-1.png" alt="" class="jumbotron-shape_1"> -->
+        <img src="images/slider-3-shape-2.png" alt="" class="jumbotron-shape_2">
+       
+
+        <!-------Info-->
+        <div class="same2div">
+            <div class="jumbotron__section">
+                <h1 class="head-1 jumbotron__title">
+                    Easiest Way  to Get a <span> Bundle</span>
+                </h1>
+                <p class="jumbotron__des">
+                    Find out why thousands of organizations are connected with <span>CORAL</span>
+                </p>
+                <div class="jumbotron__btns">
+
+                    <a href="#" class="btn btn-primary--border">LEARN MORE</a>
+                    <a href="#" class="btn btn-primary">REQUEST DEMO</a>
+                </div>
+            </div>
+
+            <div class="vector">
+                <!-- <img src="images/network.png" alt=""> -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+
+        <!--------------------------status-------->
+        <section class="status">
+            <div class="status__boxs">
+                <div class="status__box">
+                    <h1>400+</h1>
+                    <p> Providers</p>
+                </div>
+                <div class="status__box status__box--down">
+                    <h1>5,400+</h1>
+                    <p>Employers</p>
+                </div>
+
+                <div class="status__box">
+                    <h1>335+</h1>
+                    <p>TPAs / Aggregators</p>
+                </div>
+                <div class="status__box status__box--down">
+                    <h1>1,000,000+</h1>
+                    <p>Bundles</p>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------About------------>
+        <section class="about">
+
+            <div class="composition">
+
+                <img srcset="images/nat-1.jpg 300w, images/nat-1-large.jpg 1000w"
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="About Coral"
+                    class="composition__photo composition__photo--p1" src="images/nat-1-large.jpg">
+
+                <img srcset="images/nat-2.jpg 300w, images/nat-2-large.jpg 1000w"
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Bundles healthcare"
+                    class="composition__photo composition__photo--p2" src="images/nat-2-large.jpg">
+
+                <img srcset="images/nat-3.jpg 300w, images/nat-3-large.jpg 1000w"
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Providers, TPAs, Employers"
+                    class="composition__photo composition__photo--p3" src="images/nat-3-large.jpg">
+
+            </div>
+
+
+            <div class="about__des">
+                <div class="about__title">
+                    <h6 class=" moveUp">About Coral</h6>
+                    <h4 class="head-4  moveUp">
+                        Leading <span>Healthcare</span> <br>
+                        <span>Medical</span> Services Company
+                    </h4>
+
+                </div>
+                <p class=" bounceInRight">
+                    Our mission is simple: We think health plans should know the price of medical services up front, and
+                    providers should get paid extremely fast, without having to fight for what they've done. So we've
+                    built a system to simplify that process, and make it easy for everyone. Find out why thousands of
+                    organizations are connected with Coral.
+                </p>
+                <a class="btn btn-white  fadeInDown">Read More
+
+                    <svg class="arrow">
+                        <use xlink:href="/images/sprite.svg#icon-right"></use>
+                    </svg>
+                </a>
+
+            </div>
+        </section>
+
+        <!------------------------------Partner------------>
+        <section class="partner">
+
+            <img src="images/mdsave.png" height="60">
+
+            <img src="images/resourceone.png" height="60">
+
+            <img src="images/sano.png" height="60">
+
+            <img src="images/mcbride.png" height="60">
+
+            <img src="images/freemarket.png" height="60">
+        </section>
+
+        <!------------------------------Services------------>
+        <section class="features">
+            <div class="features-bg"></div>
+            <h1 class="heading-primary">
+                <span class="heading-primary--main  moveUp">Coral</span>
+                <span class="heading-primary--sub  fadeInDown">is where life happens</span>
+            </h1>
+
+            <div class="features-grid  bounceIn">
+
+                <div class="feature-box">
+                    <svg class="feature-box-icon">
+                        <use xlink:href="/images/sprite.svg#icon-workflow"></use>
+                    </svg>
+                    <h3 class="heading-tertiary">The Workflow Engine</h3>
+                    <p class="feature-box__text">
+                        <span class="strong">Coral</span>
+                        has standardized the workflow for thousands of bundled service providers, employers,
+                        TPAs and more.
+                        Create custom workflows for the organizations you work with!
+                    </p>
+                    <a class="link">View Solution
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-right"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="feature-box">
+                    <svg class="feature-box-icon">
+                        <use xlink:href="/images/sprite.svg#icon-globe"></use>
+                    </svg>
+                    <h3 class="heading-tertiary">Communication Platform</h3>
+                    <p class="feature-box__text">
+                        Send referrals and manage care-
+                        all in one place.
+                        Easily connect to providers, employers, Third Party Administrators and Care Management
+                        Companies!
+                    </p>
+                    <a class="link">View Solution
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-right"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="feature-box">
+                    <svg class="feature-box-icon">
+                        <use xlink:href="/images/sprite.svg#icon-market"></use>
+                    </svg>
+                    <h3 class="heading-tertiary">Marketplace</h3>
+                    <p class="feature-box__text">
+                        Use the <span class="strong">Coral</span> Marketplace, or create your own private
+                        marketplace of bundled medical
+                        services. Only high-quality providers, and payers that pay on time are allowed.
+                    </p>
+                    <a class="link">View Solution
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------Platform------------>
+        <section class="platform">
+            <div class="platform__text">
+                <h2 class="heading-secondary  bounceInLeft">CORAL MULTI-PLATFORM</h2>
+                <p class=" fadeInDown">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en
+                    page avant impression. Le Lorem Ipsum est le faux texte standard de l’imprimerie
+                    depuis les années 1500.
+                </p>
+                <p class=" fadeInDown">
+                    dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages
+                    du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise
+                    en page de texte, comme Aldus PageMaker.
+                </p>
+                <p class="last  fadeInDown">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la
+                    mise en page avant impression. Le Lorem Ipsum est le faux texte standard de
+                    l’imprimerie depuis les années 1500.
+                </p>
+
+                <a class="btn btn-white  bounceInLeft">KNOW MORE
+                    <svg class="arrow">
+                        <use xlink:href="/images/sprite.svg#icon-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <img src="images/platform.png" class="platform__images  bounceInRight" alt="Coral Platform">
+        </section>
+
+         <!------------------------------Request a demo------------>
+         <section class="get-demo">
+            <p class=" bounceInLeft">Now! Get a Free Counsultation for Your Case.</p>
+            <a class="btn btn-default  bounceInRight">schedule presentation demo</a>
+        </section>
+
+        <!--------------------------Testimonial-------->
+        <section class="testimonials">
+            <div class="testimonials-bg"></div>
+            <h2 class="head-2">Customer <span>Says</span> </h2>
+
+            <div class="testimonials__boxs">
+                <div class="testimonials__box">
+                    <div class="testimonials__box-bg">
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-quote"></use>
+                        </svg>
+                        <p>
+                            Coral gave us the ability to transform our multi-departmental manual process into an
+                            efficient and easy-to-use
+                            solution for the physician, the patient, and the Kempton Team. Everyone involved
+                            is able to be in-the-know during every step of the process. Coral helps my team deliver
+                            additional value to our clients and their employees.
+                        </p>
+                    </div>
+                    <div class="testimonials__box-sender">
+                        <div class="testimonials__box-sender--intial">
+                            JK
+                        </div>
+                        <p>
+                            Jay Kempton,<br /> President & CEO - Kempton Group.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonials__box">
+                    <div class="testimonials__box-bg">
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-quote"></use>
+                        </svg>
+                        <p>
+                            Coral, a solution provided by the free market and therefore responding to the needs of the
+                            consumer,
+                            provides just what you would expect: unsurpassed value.
+                            While others are shaking down their consumers for deteriorating services,
+                            Coral provides a more robust product at a better price.
+                        </p>
+                    </div>
+                    <div class="testimonials__box-sender">
+                        <div class="testimonials__box-sender--intial">
+                            KS
+                        </div>
+                        <p>
+                            Keith Smith,<br /> M.D, Founder & Anesthesiologist - Surgery Center of Oklahoma
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------NEWS-------->
+        <section class="news">
+            <h2 class="head-2">
+                Latest <span>News</span>
+            </h2>
+            <div class="news__boxs">
+                <div class="news__box">
+                    <div class="news__box--img">
+                        <img src="images/news1.jpg" alt="Coral News" class="news__box--img">
+                    </div>
+                    <h3 class="head-3">
+                        Oklahoma State Medical Association to challenge stat...
+                    </h3>
+                    <p>
+                        The medical association plans to seek a court injunction against the state's recently announced
+                        $2.1 billion Medicaid managed-care program.
+                    </p>
+                    <a class="link">Read More
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-right"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="news__box">
+                    <div class="news__box--img">
+                        <img src="images/news2.jpg" alt="Coral News" class="news__box--img">
+                    </div>
+                    <h3 class="head-3">
+                        Two tests for all UK arrivals during quarantine
+                    </h3>
+                    <p>
+
+                        All travellers entering the UK will be required to take two coronavirus tests while quarantining
+                        in an attempt to prevent variants entering the country.
+                    </p>
+                    <a class="link">Read More
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-right"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="news__box">
+                    <div class="news__box--img">
+                        <img src="images/news3.jpg" alt="Coral News" class="news__box--img">
+                    </div>
+
+
+                    <h3 class="head-3">
+                        ICU Bed Shortages Could Mean More COVID-19 Deaths
+                    </h3>
+                    <p>
+                        A lack of ICU beds and other resources was linked to a higher rate of deaths among
+                        hospitalized COVID-19 patients in the early stages of the pandemic in the Unit...
+
+
+                    </p>
+                    <a class="link">Read More
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--------------------------Mobile App-------->
+        <section class="app">
+            <img src="images/app.png" alt="Coral Mobile App For Healthcare" class="app__img">
+            <div class="app__download">
+                <h1 class="heading-secondary heading-secondary--white">Coral on demand</h1>
+                <p>
+                    Our mission is simple: We think health plans should know the price of medical services up front,
+                    and providers should get paid extremely fast,
+                    without having to fight for what they’ve done. So we’ve built
+                </p>
+
+                <div class="app__download-store">
+                    <a> <img src="images/google-play.png" alt="Coral Mobile App For Healthcare" class="app__img"></a>
+                    <a> <img src="images/app-store.png" alt="Coral Mobile App For Healthcare" class="app__img"></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------------------------Contact Us-------->
+        <!-- <section class="contacts">
+            <h2 class="head-2">
+                Get in <span>Touch</span>
+            </h2>
+            <p>Get in touch with us. Feel Free to use contact below.</p>
+            <div class="contacts__contains">
+                <div class="contacts__form">
+
+                    <div class="form-group">
+
+                        <input type="text" id="name" placeholder="Name*" class="form-control">
+                        <label class="label" for="name">Name*</label>
+                    </div>
+
+                    <div class="form-group form-group-two">
+                        <div>
+                            <input type="text" placeholder="Email*" id="Email" class="form-control">
+                            <label class="label" for="Email">Email*</label>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Phone" id="Phone" class="form-control">
+                            <label class="label" for="Phone">Phone</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject*" id="Subject" class="form-control">
+                        <label class="label" for="Subject">Subject*</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="" id="Message" placeholder="Write Your Message" id="" cols="30" rows="5"
+                            class="form-control"></textarea>
+                    </div>
+                    <div class="form-group mt-2">
+                        <h4>Business Type</h4>
+                        <div class="checkboxs-inline">
+                            <div class="checkbox">
+                                <input type="radio" id="Provider" checked name="org">
+                                <label for="Provider">Provider</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" id="TPA" name="org">
+                                <label for="TPA">TPA/Aggregator</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" id="Care" name="org">
+                                <label for="Care">Care Management</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input type="radio" id="Employer" name="org">
+                                <label for="Employer">Employer</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns mt-3">
+                        <button class="btn btn-primary">Send
+                            <svg class="arrow">
+                                <use xlink:href="/images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="contacts__location">
+
+                    <fieldset class="contacts__location-field">
+
+                        <iframe class="contacts__location-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.3077970137615!2d-97.50088128509186!3d35.59547334227854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21ecb460145fb%3A0x28e2971905f74a1b!2s12352%20Market%20Dr%2C%20Oklahoma%20City%2C%20OK%2073114%2C%20USA!5e0!3m2!1sen!2seg!4v1612493790627!5m2!1sen!2seg"
+                            height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+
+                    </fieldset>
+
+
+                </div>
+            </div>
+
+        </section> -->
+
+
+
+    </div>
+
+    <!--------------------------Footer-------->
+    <footer class="footer">
+        <div class="footer__top">
+
+            <div class="footer__top-newsletter">
+                <h4>
+                    <strong>
+                        Be Future-Ready
+                    </strong>
+                </h4>
+                <p>
+                    Get exclusive digital marketing updates
+                    Straight to your inbox.
+                </p>
+                <div class="footer__top-newsletter--input">
+                    <input type="text" class="form-control" placeholder="Email address">
+                    <a>
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__top-newsletter--social">
+                    <a href="https://web.facebook.com/coral.technology.services" target="_blank" class="fb">
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/coral/" target="_blank" class="linkedin">
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sitenav">
+                <div class="footer__top-sitemap">
+                    <h4>Sitemap</h4>
+                    <ul class="footer__top-nav">
+                        <li><a>Home</a></li>
+                        <li><a>Platform</a></li>
+                        <li><a>Plans</a></li>
+                        <li><a>About</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top-sitemap">
+                    <h4>Useful Links</h4>
+                    <ul class="footer__top-nav">
+                        <li><a>Careers</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Privacy</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="footer__top-sitemap">
+                <h4>Contact Details</h4>
+                <ul class="footer__top-nav">
+
+                    <li>
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-address"></use>
+                        </svg>
+                        123 Park Avenue, New York,
+                        United States</li>
+                    <li>
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +1 613 1234 5678</li>
+                    <li><a href="mailto:info@coral.io">
+                            <svg>
+                                <use xlink:href="/images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@coral.io</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>
+                © 2021 Coral LLC all rights reserved. </p>
+            <p>
+                Communications secured by
+
+                <a data-testid="linkElement" href="https://www.paubox.com/" target="_blank" rel="noopener"
+                    class="_2yXCL">
+                    <img src="https://static.wixstatic.com/media/75d057_d0a79b390152447691b5034e6c1cb033~mv2.png"
+                        alt="">
+
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!--------------------------SCROLL TO TOP-------->
+    <div class='scrolltop'>
+        <div class='scroll icon'>
+            <svg>
+                <use xlink:href="/images/sprite.svg#icon-rocket"></use>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

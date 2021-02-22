@@ -1,0 +1,26 @@
+//---------------------------------ABSTRACTS
+@import 'scss/abstracts/variables';
+@import 'scss/abstracts/mixins';
+
+//---------------------------------BASE
+@import 'scss/base/animations';
+@import 'scss/base/base';
+@import 'scss/base/typography';
+@import 'scss/base/utilities';
+
+//---------------------------------COMPONENTS
+@import 'scss/components/navigation';
+@import 'scss/components/buttons';
+@import 'scss/components/table';
+@import 'scss/components/drop-down';
+@import 'scss/components/tabs';
+@import 'scss/components/forms';
+@import 'scss/components/jumbotron';
+@import 'scss/components/carousel';
+//---------------------------------LAYOUT
+@import 'scss/layout/header';
+@import 'scss/layout/footer';
+
+//---------------------------------PAGES
+@import 'scss/pages/home';
+

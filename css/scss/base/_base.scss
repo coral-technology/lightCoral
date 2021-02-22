@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    //------------------------------responsive
+
+    @include responsive(tab-land) {
+        font-size: 54.25%;
+    }
+    @include responsive(tab-port) {
+        font-size: 53%;
+    }
+    @include responsive(big-desktop) {
+        font-size: 62%;
+    }
+}
+
+body {
+    font-family: $font;
+    color: $text;
+    line-height: 1.6;
+    background-color: $white;
+    overflow-x: hidden;
+    @include scroll;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+/*  scroll css section here*/
+.scrolltop .icon {
+    @include center-el;
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: $color-primary;
+        transition: all 0.4s ease;
+    }
+}
+
+.scrolltop:hover .icon {
+    svg {
+        transform: rotate(360deg);
+    }
+}
+
+.scrolltop {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: none;
+    transition: all 0.4s ease;
+    box-shadow: $shadow;
+    cursor: pointer;
+    @include center-el;
+    z-index: 999;
+}
