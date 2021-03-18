@@ -118,15 +118,21 @@
                     fill: $white;
                 }
                 &:hover {
-                   box-shadow: $shadow;
-                   margin-top: -2px;
+                    box-shadow: $shadow;
+                    margin-top: -2px;
                 }
             }
         }
 
         .login {
             .btn {
-                padding: 1rem 4rem;
+                padding: 1rem 2rem;
+                svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    fill: $white;
+                    margin-bottom: -0.2rem;
+                }
                 @include responsive(phone) {
                     padding: 0.7rem 2rem;
                 }
@@ -138,7 +144,7 @@
 .header.fixed {
     position: fixed;
     animation: headerFromTop 0.4s ease;
-    background-color: rgba($off-white,0.9);
+    background-color: rgba($off-white, 0.95);
     top: 0;
     z-index: 199;
     height: 6rem;
@@ -189,9 +195,8 @@
         }
         .search {
             .linkedin {
-                
                 &:hover {
-                  margin-top: 0;
+                    margin-top: 0;
                 }
             }
         }
