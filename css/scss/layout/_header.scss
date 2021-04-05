@@ -214,3 +214,134 @@
         }
     }
 }
+.header.inner {
+    position: fixed;
+    animation: headerFromTop 0.4s ease;
+    background-color: rgba($off-white, 0.95);
+    top: 0;
+    z-index: 199;
+    height: 6rem;
+    // box-shadow: $shadow;
+    border-bottom: 1px solid $color-grey-light;
+    grid-template-columns: 1fr 0.8fr 0.4fr;
+    @include responsive(tab-port) {
+        grid-template-columns: 2fr 0.7fr 0.1fr;
+        gap: 0;
+    }
+
+    @include responsive(phone) {
+        grid-template-columns: 0.6fr 0.5fr 0.1fr;
+        gap: 0;
+    }
+
+    .header__logo {
+        height: 2.5rem;
+    }
+    .header__nav {
+        padding-top: 0.8rem;
+
+        &--link {
+            color: $black;
+            font-size: 1.4rem;
+            font-weight: 300;
+            &:hover,
+            &.active {
+                color: $color-primary;
+                &::after {
+                    @include after-before;
+                    top: 2.1rem;
+                    border-bottom: 4px solid $color-primary;
+                    transition: all 0.5 ease;
+                }
+            }
+        }
+
+        @include responsive(phone) {
+            display: none;
+        }
+    }
+    .header__user {
+        .line {
+            background-color: $grey;
+            width: 1px;
+            height: 2rem;
+        }
+        .search {
+            .linkedin {
+                &:hover {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .navigation__button {
+        background-color: $off-white;
+        box-shadow: none;
+    }
+    .navigation__icon {
+        &,
+        &::before,
+        &::after {
+            background-color: $color-grey-darker;
+        }
+    }
+}
+
+.inner-header {
+    margin-top: 6rem;
+    padding: 2rem 15rem;
+
+    .head-1 {
+        font-size: 3.4rem;
+        font-weight: 600;
+        color: $black;
+    }
+    .breadcrump {
+        display: flex;
+        margin-left: -1rem;
+        li {
+            position: relative;
+            &:not(:last-child) {
+                &::after {
+                    content: ".";
+                    position: absolute;
+                    right: 0;
+                    top: 0px;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    color: $black;
+                }
+            }
+        }
+
+        a {
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: 0 1rem;
+
+            display: inline-block;
+            color: $black;
+            position: relative;
+
+            &:hover {
+                color: $color-primary;
+            }
+
+            &.active {
+                color: $color-grey-dark;
+                cursor: text;
+                &:hover {
+                    color: $color-grey-dark;
+                }
+            }
+        }
+    }
+
+    .line {
+        height: 4px;
+        background-color: $color-primary;
+        width: 13rem;
+        margin-top: 2rem;
+    }
+}
