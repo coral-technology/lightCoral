@@ -170,7 +170,7 @@
 .linkedin {
     width: 3rem;
     height: 3rem;
-    border: 1px solid $grey;
+    border: 1px solid $color-grey-darker;
     border-radius: 50%;
     transition: all 0.3s ease;
     @include center-el;
@@ -178,7 +178,7 @@
     svg {
         width: 1.5rem;
         height: 1.5rem;
-        fill: $grey;
+        fill: $color-grey-darker;
     }
 
     &-header {

@@ -115,6 +115,35 @@
         &:focus {
             transform: translateY(-1px);
         }
+      
+    }
+
+    &-white-border {
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+        padding: 1rem 4rem;
+        svg.arrow {
+            fill: $color-primary;
+        }
+        &::after {
+            background-color: transparent;
+            color: $color-grey-dark;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: $shadow;
+            background-color: $color-primary;
+            color: $white;
+            svg.arrow {
+                fill: $white;
+            }
+        }
+        &:focus {
+            transform: translateY(-1px);
+        }
+      
     }
 
     &-grey {

@@ -69,7 +69,16 @@ $(window).scroll(function () {
 
 
 
-  //--------------------LOGIN
-  document.querySelector('.img__btn').addEventListener('click', function() {
-    document.querySelector('.cont').classList.toggle('s--signup');
-  });
+
+  //--------Numbers Counter
+  $('.count').each(function () {
+    $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 8000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});

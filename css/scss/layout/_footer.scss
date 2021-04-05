@@ -1,7 +1,7 @@
 //----------------------------------------Footer
 .footer {
     padding: 5rem 10rem 0;
-    background-color: $black;
+    background-color: $off-white;
     @include responsive(tab-land) {
         padding: 5rem 6rem 0;
     }
@@ -18,7 +18,7 @@
         display: grid;
         grid-template-columns: 1fr repeat(2, 0.7fr);
         gap: 10rem;
-        color: $grey;
+        color: $black;
         font-size: 1.4rem;
         border-bottom: 1px solid $color-grey-darker;
         padding-bottom: 3rem;
@@ -33,8 +33,8 @@
         }
         h4 {
             font-size: 1.6rem;
-            color: $white;
-            font-weight: 300;
+            color: $black;
+            font-weight: 600;
             margin-bottom: 1rem;
             strong {
                 font-weight: 600;
@@ -54,20 +54,20 @@
                 grid-template-columns: 1fr max-content;
                 margin-top: 2rem;
                 input {
-                    border: 1px solid $color-grey-darker;
+                    border: 1px solid $color-grey;
                     border-right: none;
                     border-radius: 0;
                     border-top-left-radius: 0.4rem;
                     border-bottom-left-radius: 0.4rem;
                     background: none;
-                    color: $grey;
+                    color: $black;
                     height: 4rem;
                 }
                 a {
                     background-color: $color-primary;
                     border-top-right-radius: 0.4rem;
                     border-bottom-right-radius: 0.4rem;
-                    border: 1px solid $color-grey-darker;
+                    border: 1px solid $color-grey;
                     border-left: none;
                     width: 4rem;
                     height: 4rem;
@@ -100,14 +100,14 @@
                 svg {
                     width: 2rem;
                     height: 2rem;
-                    fill: $grey;
+                    fill: $color-grey-darker;
                     display: inline-block;
                     margin: 0 0.5rem -0.3rem 0;
                 }
             }
             a {
                 display: block;
-                color: $grey;
+                color: $black;
 
                 &:hover {
                     color: $color-primary;
@@ -118,7 +118,7 @@
 
     &__copyright {
         padding: 2.5rem 0;
-        color: $color-grey-dark;
+        color: $black;
         font-size: 1.4rem;
         display: flex;
         justify-content: space-between;

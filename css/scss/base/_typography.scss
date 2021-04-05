@@ -78,9 +78,9 @@
   &--sub {
     display: block;
     font-size: 2rem;
-    letter-spacing: 1.5rem;
+    letter-spacing: 1rem;
     animation: moveInRight 1s ease-out;
-
+    font-weight: 500;
     @include responsive(phone) {
       letter-spacing: 0.5rem;
     }

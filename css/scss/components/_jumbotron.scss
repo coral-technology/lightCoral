@@ -2,11 +2,7 @@
 .jumbotron {
     position: relative;
     height: 100vh;
-    // background-image: linear-gradient(60deg, var(--brand_color) 0%, var(--secondary_color) 100%);
-    //  background-repeat: repeat-x;
-    // background: url(/images/hero-2-bg.png) no-repeat top left;
-    // background-size: cover;
-    background-color: $off-white;
+    background-color: $white;
     @include center-el;
     justify-content: flex-start;
     overflow: hidden;
@@ -18,49 +14,18 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
-    &-v1 {
-        position: absolute;
-        bottom: 0rem;
-        left: 0rem;
-        width: 17rem;
-    }
-    &-v2 {
-        position: absolute;
-        bottom: 0rem;
-        right: 0rem;
-        width: 12rem;
-    }
-    &-girl {
-        position: absolute;
-        bottom: 0rem;
-        right: 20rem;
-        width: 10rem;
-    }
-    &-man {
-        position: absolute;
-        bottom: 0rem;
-        left: 20rem;
-        width: 10rem;
-    }
-
-    &-file {
-        position: absolute;
-        top: 40%;
-        left: 5rem;
-    }
-
     &-img {
         position: absolute;
-        bottom: 10rem;
-        right: 10rem;
-        z-index: 2;
+        top: 6rem;
+        left: 58%;
+        transform: translateX(-58%);
+        z-index: 0;
         animation-name: right-left;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
         animation-direction: alternate;
-        width: 45%;
+        width: 77%;
         h1 {
             color: $color-primary;
             font-size: 5.6rem;
@@ -82,57 +47,11 @@
 
         img,
         svg {
+
             width: 100%;
-
         }
-
-      
     }
-    &-cloud {
-        position: absolute;
-        left: 90px;
-        top: 120px;
-        z-index: 3;
-        animation-name: cloud;
-        animation-duration: 30.5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-direction: alternate;
-        width: 7rem;
-    }
-    &-cloud2 {
-        position: absolute;
-        right: 290px;
-        top: 150px;
-        z-index: 1;
-        animation-name: cloud2;
-        animation-duration: 30.5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-direction: alternate;
-        width: 10rem;
-    }
-
-    &-line {
-        position: absolute;
-        bottom: 100px;
-        left: 165px;
-    }
-
-    &-shape_1 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-    }
-
-    &-shape_2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 35rem;
-        animation: shape2 6s infinite;
-    }
+  
 
     .overlay {
         position: absolute;
@@ -142,12 +61,14 @@
     }
 
     &__section {
-        text-align: left;
         position: relative;
-        margin-left: 10rem;
-        margin-top: 7rem;
+        // margin-left: 10rem;
+        text-align: center;
+        margin-top: 2rem;
         z-index: 2;
         color: $black;
+        left: 50%;
+        transform: translateX(-50%);
         span {
             color: $color-primary;
         }
@@ -167,6 +88,7 @@
     &__title {
         animation: left 1.5s cubic-bezier(0.92, 0.18, 0, 0.94);
         color: $black;
+        text-align: center;
     }
 
     &__des {
@@ -174,16 +96,16 @@
         font-size: 2.4rem;
         font-weight: 300;
         line-height: 3.3rem;
-        margin: 2.5rem 0 5rem;
+        margin: 2.5rem 0 0rem;
         animation: right 1.5s cubic-bezier(0.92, 0.18, 0, 0.94);
-        padding-left: 2rem;
-        border-left: 4px solid $color-primary;
+        text-align: center;
+
     }
 
     &__btns {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 3rem;
         animation-delay: 1s;
         .btn {
@@ -249,16 +171,15 @@
 
 #particles-js {
     position: absolute;
-    width: 85%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    left: 0;
+    top: 0;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     z-index: 2;
-    // opacity: 0.7;
+    opacity: 0.7;
     animation: test 5s infinite ease-in;
 }
 

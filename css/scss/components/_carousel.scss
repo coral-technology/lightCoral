@@ -1,6 +1,11 @@
+.logos {
+    margin: 10rem 0 0;
+}
+
+
 .partner {
     background-color: $white;
-    padding: 3rem 10rem 10rem;
+    padding: 0 10rem 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     justify-content: center;
