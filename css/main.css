@@ -1367,7 +1367,6 @@ a.link:hover svg {
 }
 
 .form-control::-webkit-input-placeholder, .form-control::-webkit-textarea-placeholder {
-  text-transform: uppercase;
   color: #a3a3b2;
   font-weight: 300;
 }
@@ -1539,16 +1538,6 @@ textarea.form-control {
   -webkit-transform: translateX(-58%);
           transform: translateX(-58%);
   z-index: 0;
-  -webkit-animation-name: right-left;
-          animation-name: right-left;
-  -webkit-animation-duration: 4.5s;
-          animation-duration: 4.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   width: 77%;
 }
 
@@ -2169,8 +2158,8 @@ textarea.form-control {
   z-index: 199;
   height: 6rem;
   border-bottom: 1px solid #cbcbd9;
-  -ms-grid-columns: 0.8fr 1fr 0.4fr;
-      grid-template-columns: 0.8fr 1fr 0.4fr;
+  -ms-grid-columns: 1fr 0.8fr 0.4fr;
+      grid-template-columns: 1fr 0.8fr 0.4fr;
 }
 
 @media only screen and (max-width: 56.25em) {
