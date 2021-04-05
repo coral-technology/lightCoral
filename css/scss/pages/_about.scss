@@ -1,7 +1,8 @@
+//-------------------------------------------ABOUT US
 .aboutus {
-    padding: 3rem 15rem;
+    padding: 8rem 15rem 0;
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 1.5fr 0.7fr;
     gap: 4rem;
     align-items: center;
     h2 {
@@ -11,9 +12,259 @@
     }
     p {
         font-size: 1.6rem;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
     }
     &__img {
         width: 100%;
+    }
+}
+
+//-------------------------------------------HISTORY
+
+.history {
+    padding: 5rem 15rem 7rem;
+    // background-color: $off-white;
+    &__contain {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        gap: 4rem;
+    }
+}
+
+#timeline {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.timelineCont .row {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    div {
+        position: relative;
+    }
+}
+#timeline .timelineCont:first-child,
+#timeline .timelineCont:last-child {
+    display: none;
+}
+
+#timeline div .date {
+    border-right: 1px solid $color-grey-dark;
+    text-align: right;
+
+    &-icon {
+        position: absolute;
+
+        &-up {
+            top: -2.2rem;
+            right: -0.5rem;
+        }
+        &-down {
+            bottom: -2.2rem;
+            right: -0.5rem;
+        }
+    }
+}
+
+#timeline div .date:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: $color-grey-dark;
+    position: absolute;
+    left: 99.2%;
+    top: 1.2rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#timeline div.active .date::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: $color-primary;
+    position: absolute;
+    left: 98.7%;
+    top: 1.2rem;
+    border-radius: 100%;
+}
+
+#timeline div .date h2 {
+    margin: 0 2.8rem 4rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#timeline div.active .date h2 {
+    font-size: 2rem;
+    color: $color-primary;
+}
+
+#timeline div .text p {
+    margin: 0 50px 0;
+    width: 100%;
+    display: none;
+    font-size: 1.6rem;
+    color: $black;
+    strong {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .vector {
+        position: absolute;
+        left: -90%;
+        top: 4rem;
+        height: 30rem;
+    }
+}
+
+#timeline div.active .text p {
+    display: inherit;
+}
+
+//------------------------------------------VALUES
+
+.values {
+    background-color: $color-primary;
+    padding: 5rem 15rem;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 5rem;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+        //  transform: skewY(2deg);
+        & > * {
+            // transform: skewY(2deg);
+            height: 100%;
+        }
+        @include responsive(tab-port) {
+            grid-template-columns: 0.7fr;
+            justify-content: center;
+        }
+        @include responsive(phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-box {
+        background-color: transparent;
+        font-size: 1.5rem;
+        padding: 7rem 0 2rem;
+        text-align: left;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        border-bottom: 3px solid $color-primary;
+        @include responsive(tab-port) {
+            padding: 2rem;
+        }
+        h3 {
+            color: $white;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: $off-white;
+        }
+        &-icon {
+            width: 6rem;
+            height: 6rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            fill: $white;
+            transition: all 0.9s ease;
+            @include responsive(tab-port) {
+                margin-bottom: 0;
+            }
+        }
+
+        a.link {
+            margin-top: 1.5rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+
+            svg {
+                // transform: rotate(360deg);
+                transform: scale(1.1);
+                //fill: $blue;
+            }
+        }
+    }
+
+    @include responsive(tab-land) {
+        padding: 10rem 6rem;
+    }
+
+    @include responsive(tab-port) {
+        padding: 10rem 5rem;
+        h1 {
+            text-align: center;
+        }
+    }
+
+    @include responsive(phone) {
+        padding: 10rem 3rem;
+    }
+}
+
+//------------------------------------------VALUES
+
+.teams {
+    background-color: $white;
+    padding: 0 10rem 5rem;
+
+    .team {
+        margin: 10rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        justify-content: center;
+        gap: 5rem;
+        position: relative;
+        text-align: center;
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-img {
+                display: block;
+                width: 15rem;
+                height: 15rem;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            span {
+                font-size: 2rem;
+                font-weight: 300;
+                color: $black;
+            }
+        }
+    }
+    p {
+        margin-top: 7rem;
+        font-size: 1.8rem;
+        text-align: center;
+        color: $black;
+        font-weight: 600;
+        a {
+            color: $blue;
+        }
     }
 }

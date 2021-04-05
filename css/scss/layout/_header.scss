@@ -290,8 +290,8 @@
 
 .inner-header {
     margin-top: 6rem;
-    padding: 2rem 15rem;
-
+    padding: 2rem 15rem 0;
+    border-bottom: 1px solid $color-grey-lighter;
     .head-1 {
         font-size: 3.4rem;
         font-weight: 600;
@@ -302,23 +302,25 @@
         margin-left: -1rem;
         li {
             position: relative;
+            margin: 0 1rem;
             &:not(:last-child) {
                 &::after {
-                    content: ".";
+                    content: "/";
                     position: absolute;
                     right: 0;
-                    top: 0px;
+                    top: -0.3rem;
                     font-size: 1.8rem;
-                    font-weight: 600;
-                    color: $black;
+                    font-weight: 300;
+                    margin: 0 -1.5rem 0 0;
+                    color: $color-grey;
                 }
             }
         }
 
         a {
-            font-size: 1.8rem;
-            font-weight: 600;
-            padding: 0 1rem;
+            font-size: 1.4rem;
+            font-weight: 300;
+          
 
             display: inline-block;
             color: $black;

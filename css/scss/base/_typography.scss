@@ -53,6 +53,32 @@
     color: $white;
   }
 }
+//---------------------------------------------------------H4
+.head-4 {
+  font-size: 3.2rem;
+  color: $color-primary;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  //-----------------------------WHITE Head 1
+  &--white {
+    color: $white;
+  }
+}
+
+//---------------------------------------------------------H5
+.head-5 {
+  font-size: 2rem;
+  color: $black;
+  font-weight: 600;
+  // text-transform: uppercase;
+
+  //-----------------------------WHITE Head 1
+  &--white {
+    color: $white;
+  }
+}
+
 
 .heading-primary {
   color: $black;
@@ -107,10 +133,10 @@
   &--white {
     color: $white;
   }
-  &:hover {
-    // transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($dark, 0.2);
-  }
+  // &:hover {
+  //   // transform: skewY(2deg) skewX(15deg) scale(1.1);
+  //   //text-shadow: 0.5rem 1rem 2rem rgba($dark, 0.2);
+  // }
 }
 
 .heading-tertiary {
