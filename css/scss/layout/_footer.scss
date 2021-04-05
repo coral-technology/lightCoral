@@ -20,7 +20,7 @@
         gap: 10rem;
         color: $black;
         font-size: 1.4rem;
-        border-bottom: 1px solid $color-grey-darker;
+        border-bottom: 1px solid $color-grey;
         padding-bottom: 3rem;
         @include responsive(phone) {
             grid-template-columns: 1fr;
