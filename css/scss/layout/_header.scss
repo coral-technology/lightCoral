@@ -150,7 +150,7 @@
     height: 6rem;
     // box-shadow: $shadow;
     border-bottom: 1px solid $color-grey-light;
-    grid-template-columns: 0.8fr 1fr 0.4fr;
+    grid-template-columns: 1fr 0.8fr 0.4fr;
     @include responsive(tab-port) {
         grid-template-columns: 2fr 0.7fr 0.1fr;
         gap: 0;
