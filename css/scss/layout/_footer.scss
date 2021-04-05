@@ -1,7 +1,7 @@
 //----------------------------------------Footer
 .footer {
     padding: 5rem 10rem 0;
-    background-color: $off-white;
+    background-color: $color-grey-lighter;
     @include responsive(tab-land) {
         padding: 5rem 6rem 0;
     }
