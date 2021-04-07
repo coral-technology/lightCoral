@@ -1719,7 +1719,7 @@ textarea.form-control {
   background-size: cover;
   background-position: 50% 50%;
   z-index: 2;
-  opacity: 0.4;
+  opacity: 0.6;
   -webkit-animation: test 5s infinite ease-in;
           animation: test 5s infinite ease-in;
 }
