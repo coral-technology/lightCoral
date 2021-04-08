@@ -1,0 +1,39 @@
+.Register .btn{
+    padding: 1rem 5rem;
+}
+
+
+
+.login-title{
+    padding: 14rem 15rem;
+text-align: center;
+}
+
+.head-4 {
+    color: #121217;
+    font-weight: 400;
+}
+.login-title p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #121217;
+    margin-top: 1rem;
+
+}
+
+.login{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem 5rem;
+
+}
+
+.login .btn{
+    height: 5rem;
+display: block;
+width: 15rem;
+
+}
+.login__rocket{
+    padding: 1rem 0;
+}
