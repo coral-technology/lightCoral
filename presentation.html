@@ -13,7 +13,25 @@
     <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
 
     <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <style>
+        .scrolltop {
+            bottom: 12rem !important;
+        }
 
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: 3;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -107,20 +125,21 @@
 
     <div class="container">
 
-        <div class="portal animate-this">
-       
-            <a href="#section-2" class="animate-text1 toggle">
+        <div class="portal">
+
+            <a class="toggle payer">
                 <img src="images/payer.png" alt="Payer">
                 Payer</a>
 
-            <a href="#" class="animate-this">
+            <a href="#" class="provider">
                 <img src="images/provider.png" alt="Provider">
                 Provider</a>
-                
+
         </div>
 
 
         <div class="pres" id="target">
+            <a class=" pres__back close">Back</a>
             <nav>
                 <span tooltip="ONE WORKFLOW" flow="left"> <a href="#section-1">ONE WORKFLOW</a></span>
                 <span tooltip="COMMUNICATION" flow="left"> <a href="#section-2">COMMUNICATION</a></span>
