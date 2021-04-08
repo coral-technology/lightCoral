@@ -5292,8 +5292,7 @@ img.ug-sepia-effect {
     font-size: 14px;
     font-weight: bold;
 }
-.--------------CAROUSEL------------------ {
-}
+
 .ug-gallery-wrapper .ug-carousel-wrapper {
     position: absolute;
     overflow: hidden;
@@ -5301,8 +5300,7 @@ img.ug-sepia-effect {
 .ug-gallery-wrapper .ug-carousel-inner {
     position: absolute;
 }
-.------------------LIGHTBOX--------------------- {
-}
+
 .ug-gallery-wrapper.ug-lightbox {
     display: none;
     position: fixed;
@@ -5409,8 +5407,8 @@ img.ug-sepia-effect {
     color: #f3f3f3;
     font-size: 16px;
 }
-.------------------LOADMORE_BUTTON--------------------- {
-}
+
+
 .ug-loadmore-wrapper {
     margin-top: 20px;
     text-align: center;
@@ -5432,8 +5430,8 @@ img.ug-sepia-effect {
 .ug-loadmore-wrapper .ug-loadmore-loader {
     color: #515151;
 }
-.------------------CATEGORY_TABS--------------------- {
-}
+
+
 .ug-tabs-wrapper {
     margin-top: 0px;
     margin-bottom: 20px;

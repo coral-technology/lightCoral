@@ -60,6 +60,15 @@
   font-weight: 300;
   text-transform: uppercase;
 
+span {
+  color: $color-primary;
+}
+   //-----------------------------WHITE Head 1
+   &--black {
+    color: $black;
+  }
+
+
   //-----------------------------WHITE Head 1
   &--white {
     color: $white;
