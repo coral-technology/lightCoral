@@ -199,6 +199,98 @@ Note: 1em = 16px (broswer Defualt Font)
   }
 }
 
+@-webkit-keyframes payer {
+  0% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+  25% {
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(5%, 5%);
+            transform: translate(5%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+}
+
+@keyframes payer {
+  0% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+  25% {
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(5%, 5%);
+            transform: translate(5%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+}
+
+@-webkit-keyframes provider {
+  0% {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  25% {
+    -webkit-transform: translate(5%, 5%);
+            transform: translate(5%, 5%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
+  }
+  100% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes provider {
+  0% {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  25% {
+    -webkit-transform: translate(5%, 5%);
+            transform: translate(5%, 5%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
+  }
+  100% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
 @-webkit-keyframes pulsate {
   0% {
     -webkit-transform: scale(0.1, 0.1);
@@ -4078,31 +4170,21 @@ textarea.form-control {
   overflow: visible !important;
 }
 
-#particles-js {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: 3;
-  opacity: 0.5;
-  -webkit-animation: test 5s infinite ease-in;
-          animation: test 5s infinite ease-in;
-  pointer-events: none;
-}
-
 #particles-js.active {
   opacity: 0.2;
 }
 
 .portal {
+  position: relative;
   height: 100vh;
-  background-color: transparent;
-  position: fixed;
+  visibility: visible;
+  -webkit-transition: all 1s cubic-bezier(0.9, 0.3, 0.13, 0.62);
+  transition: all 1s cubic-bezier(0.9, 0.3, 0.13, 0.62);
+  animation-direction: reverse;
+  overflow: visible;
+  background: #fff;
   width: 100%;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4112,6 +4194,32 @@ textarea.form-control {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.portal .payer {
+  -webkit-animation-name: payer;
+          animation-name: payer;
+  -webkit-animation-duration: 7.5s;
+          animation-duration: 7.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.portal .provider {
+  -webkit-animation-name: provider;
+          animation-name: provider;
+  -webkit-animation-duration: 7.5s;
+          animation-duration: 7.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .portal a {
@@ -4157,17 +4265,27 @@ textarea.form-control {
           box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.4);
 }
 
+.portal.activeUp {
+  visibility: hidden;
+  height: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
 #target {
   visibility: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  animation-direction: reverse;
   z-index: 2;
-  -webkit-transform: translateY(-100vh);
-          transform: translateY(-100vh);
+  height: 0;
+  overflow: hidden;
 }
 
 #target.active {
   visibility: visible;
-  -webkit-transform: translateY(0vh);
-          transform: translateY(0vh);
+  height: 100vh;
+  overflow: visible;
 }
 
 .Hide {
@@ -4187,6 +4305,35 @@ textarea.form-control {
   z-index: 2;
   scroll-snap-align: start;
   background-attachment: fixed;
+}
+
+.pres__back {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  bottom: 5.5rem;
+  right: 4rem;
+  border-radius: 50%;
+  background-color: #f86f6f;
+  color: #fff;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pres__back:hover {
+  background-color: #fff;
+  color: #f86f6f;
 }
 
 .pres p {

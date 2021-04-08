@@ -16,25 +16,67 @@ $(function () {
 
 
 
-$('.Show').click(function () {
-    $('#target').show(500);
-    $('.Show').hide(0);
-    $('.Hide').show(0);
-});
-$('.Hide').click(function () {
-    $('#target').hide(500);
-    $('.Show').show(0);
-    $('.Hide').hide(0);
-   
-});
-$('.toggle').click(function () {
-    $('#target').toggle('slow');
-    $('#particles-js').addClass('active');
-    $('#target').addClass('active');
-    $('.portal').addClass('activeUp');
-});
+// $('.Show').click(function () {
+//     $('#target').show(500);
+//     $('.Show').hide(0);
+//     $('.Hide').show(0);
+//     $('#particles-js').removeClass('active');
+//     $('#target').removeClass('active');
+//     $('.portal').removeClass('activeUp');
+// });
+// $('.Hide').click(function () {
+//     $('#target').hide(500);
+//     $('.Show').show(0);
+//     $('.Hide').hide(0);
+
+// });
+// $('.toggle').click(function () {
+//     // $('#target').toggle('slow');
+//     $('#particles-js').addClass('active');
+//     $('#target').addClass('active');
+//     $('.portal').addClass('activeUp');
+
+// });
 
 
+var $button = document.querySelector(".toggle");
+var $close = document.querySelector(".close");
+// on click event
+$button.addEventListener('click', function () {
+    if ($button.classList.contains("active")) {
+        // if has 'selected' class remove class
+        $('#particles-js').removeClass('active');
+        $('#target').removeClass('active');
+        $('.portal').removeClass('activeUp');
+        $button.classList.remove("active");
+        $close.classList.remove("close");
+    } else {
+        // otherwise add 'selected' class
+        $('#particles-js').addClass('active');
+        $('#target').addClass('active');
+        $('.portal').addClass('activeUp');
+        $button.classList.add("active");
+        $close.classList.add("close");
+    }
+});
+
+$close.addEventListener('click', function () {
+    if ($close.classList.contains("close")) {
+        // if has 'selected' class remove class
+        $('#particles-js').removeClass('active');
+        $('#target').removeClass('active');
+        $('.portal').removeClass('activeUp');
+        $close.classList.remove("close");
+        $button.classList.remove("active");
+    } else {
+        // otherwise add 'selected' class
+        $('#particles-js').addClass('close');
+        $('#target').addClass('active');
+        $('.portal').addClass('activeUp');
+        $close.classList.add("close");
+        $button.classList.add("active");
+    }
+});
 
 
 

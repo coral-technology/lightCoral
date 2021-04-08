@@ -9,20 +9,6 @@ html {
 }
 
 //-----------------------------Particles Override
-#particles-js {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index: 3;
-    opacity: 0.5;
-    animation: test 5s infinite ease-in;
-    pointer-events: none;
-}
 
 #particles-js.active {
     opacity: 0.2;
@@ -31,12 +17,32 @@ html {
 //--------------------------------Portal
 
 .portal {
+    position: relative;
     height: 100vh;
-    background-color: transparent;
-    position: fixed;
+    visibility: visible;
+    transition: all 1s cubic-bezier(0.9, 0.3, 0.13, 0.62);
+    animation-direction: reverse;
+    overflow: visible;
+    background: $white;
     width: 100%;
+    z-index: 2;
+    .payer {
+        animation-name: payer;
+        animation-duration: 7.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+
+    .provider {
+        animation-name: provider;
+        animation-duration: 7.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
     @include center-el;
-   
+
     a {
         width: 22rem;
         height: 22rem;
@@ -64,19 +70,29 @@ html {
             box-shadow: $shadow-dark;
         }
     }
-
- 
+}
+.portal.activeUp {
+    visibility: hidden;
+    height: 0;
+    z-index: 2;
+    overflow: hidden;
 }
 
 #target {
     visibility: hidden;
+    transition: all 1s ease-in-out;
+    animation-direction: reverse;
     z-index: 2;
-    transform: translateY(-100vh);
+    height: 0;
+    overflow: hidden;
 }
+
 #target.active {
     visibility: visible;
-    transform: translateY(0vh);
+    height: 100vh;
+    overflow: visible;
 }
+
 .Hide {
     display: none;
 }
@@ -94,6 +110,26 @@ html {
         z-index: 2;
         scroll-snap-align: start;
         background-attachment: fixed;
+    }
+
+    &__back {
+        position: fixed;
+        width: 5rem;
+        height: 5rem;
+        bottom: 5.5rem;
+        right: 4rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $white;
+        box-shadow: $shadow;
+        z-index: 10;
+        font-size: 1.3rem;
+        @include center-el;
+
+        &:hover {
+            background-color: $white;
+            color: $color-primary;
+        }
     }
 
     p {
