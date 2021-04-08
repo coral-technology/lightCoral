@@ -30,6 +30,9 @@ text-align: center;
 .head-5{
     padding-bottom: 3rem;
 }
+.login a{
+     color: lightcoral;
+}
 
 .login .btn{
     height: 4rem;
