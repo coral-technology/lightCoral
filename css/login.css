@@ -1,3 +1,9 @@
+.Register .btn{
+    padding: 1rem 5rem;
+}
+
+
+
 .login-title{
     padding: 14rem 15rem;
 text-align: center;
@@ -17,12 +23,17 @@ text-align: center;
 
 .login{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     padding: 1rem 5rem;
 
 }
+
 .login .btn{
     height: 5rem;
 display: block;
+width: 15rem;
 
+}
+.login__rocket{
+    padding: 1rem 0;
 }
