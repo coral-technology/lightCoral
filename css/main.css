@@ -4836,4 +4836,10 @@ ul.communication-list li a:hover,
 ul.communication-list-small li a:hover {
   border-bottom: 0.3rem solid;
 }
+
+.careers {
+  -ms-grid-columns: 1.3fr 0.7fr !important;
+      grid-template-columns: 1.3fr 0.7fr !important;
+  gap: 5rem !important;
+}
 /*# sourceMappingURL=main.css.map */
