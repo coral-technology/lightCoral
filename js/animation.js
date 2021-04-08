@@ -30,7 +30,8 @@ $('.Hide').click(function () {
 $('.toggle').click(function () {
     $('#target').toggle('slow');
     $('#particles-js').addClass('active');
-    
+    $('#target').addClass('active');
+    $('.portal').addClass('activeUp');
 });
 
 

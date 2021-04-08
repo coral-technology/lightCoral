@@ -1355,7 +1355,7 @@ a.link:hover svg {
   height: 4.5rem;
   font-family: "Open Sans", sans-serif;
   border: none;
-  border-bottom: 1px solid #4f5569;
+  border: 1px solid #cbcbd9;
   width: 100%;
   outline: none;
   -webkit-box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.1);
@@ -4078,10 +4078,6 @@ textarea.form-control {
   overflow: visible !important;
 }
 
-.header.inner {
-  background-color: rgba(248, 248, 248, 0.45);
-}
-
 #particles-js {
   position: fixed;
   width: 100%;
@@ -4162,8 +4158,16 @@ textarea.form-control {
 }
 
 #target {
-  display: none;
+  visibility: hidden;
   z-index: 2;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+
+#target.active {
+  visibility: visible;
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
 }
 
 .Hide {

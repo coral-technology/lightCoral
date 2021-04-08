@@ -7,9 +7,7 @@ html {
 .simpleParallax {
     overflow: visible !important;
 }
-.header.inner {
-    background-color: rgba($off-white, 0.45);
-}
+
 //-----------------------------Particles Override
 #particles-js {
     position: fixed;
@@ -71,9 +69,13 @@ html {
 }
 
 #target {
-    display: none;
+    visibility: hidden;
     z-index: 2;
-    
+    transform: translateY(-100vh);
+}
+#target.active {
+    visibility: visible;
+    transform: translateY(0vh);
 }
 .Hide {
     display: none;
