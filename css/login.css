@@ -24,16 +24,19 @@ text-align: center;
 .login{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 1rem 5rem;
+    padding: 1rem 10rem;
 
+}
+.head-5{
+    padding-bottom: 3rem;
 }
 
 .login .btn{
-    height: 5rem;
+    height: 4rem;
 display: block;
 width: 15rem;
-
+margin-top: 6rem;
 }
 .login__rocket{
-    padding: 1rem 0;
+    padding: 0,0;
 }
