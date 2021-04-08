@@ -1819,7 +1819,7 @@ textarea.form-control {
   background-size: cover;
   background-position: 50% 50%;
   z-index: 2;
-  opacity: 0.6;
+  opacity: 0.5;
   -webkit-animation: test 5s infinite ease-in;
           animation: test 5s infinite ease-in;
 }
@@ -4545,7 +4545,7 @@ textarea.form-control {
   border-radius: 5px;
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
-  padding: 2rem 3rem;
+  padding: 3rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
