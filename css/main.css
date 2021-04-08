@@ -4522,6 +4522,80 @@ textarea.form-control {
   margin: 6rem 0 0 4rem;
 }
 
+.pres__seven {
+  background-color: #F8F8F8;
+}
+
+.pres__seven-des {
+  width: 70%;
+}
+
+.pres__seven-pricing {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  width: 100%;
+}
+
+.pres__seven-pricing > div {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.pres__seven-pricing > div strong {
+  font-size: 2.6rem;
+  color: #f86f6f;
+}
+
+.pres__seven-pricing > div a {
+  display: inline-block;
+  width: 40%;
+  margin: auto;
+}
+
+.pres__seven-pricing .plan-a-img {
+  display: block;
+  margin: 3rem auto 2rem;
+  width: 70%;
+}
+
+.pres__seven-pricing .plan-b-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.6fr 1.4fr;
+      grid-template-columns: 0.6fr 1.4fr;
+  gap: 1rem;
+  margin: 3rem auto 2rem;
+}
+
+.pres__seven-pricing .plan-b-img img {
+  display: block;
+  width: 100%;
+}
+
+.pres__seven-img {
+  position: relative;
+  z-index: 6;
+  display: block;
+  width: 80%;
+  margin: 6rem 0 0 4rem;
+}
+
 nav {
   position: fixed;
   right: 20px;
@@ -4582,15 +4656,15 @@ nav a::before {
   transition: all 0.4s ease-in-out;
 }
 
-nav a:hover {
+nav a:hover, nav a.activep {
   border: 1px solid #f86f6f;
 }
 
-nav a:hover::after {
+nav a:hover::after, nav a.activep::after {
   background: #f86f6f;
 }
 
-nav a:hover::before {
+nav a:hover::before, nav a.activep::before {
   border: 1px dotted #f86f6f;
 }
 
@@ -4679,19 +4753,40 @@ ul.communication-list {
   list-style-position: inside;
 }
 
+ul.communication-list-small {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 3rem 0 1rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-position: inside;
+}
+
 @media only screen and (max-width: 37.5em) {
   ul.communication-list {
     display: none;
   }
 }
 
-ul.communication-list li {
+ul.communication-list li,
+ul.communication-list-small li {
   padding: 0.4rem 0 0.4rem 0;
   font-size: 2em;
   list-style-type: none;
   font-size: 1.8rem;
   margin-bottom: 2rem;
   color: #121217;
+}
+
+ul.communication-list-small li {
+  font-size: 1.4rem;
+  text-align: left;
 }
 
 ul.communication-list li:hover:before {
@@ -4715,12 +4810,30 @@ ul.communication-list li:before {
   text-align: center;
 }
 
-ul.communication-list li a {
+ul.communication-list-small li:before {
+  content: "\2713 ";
+  font-size: 1rem;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  display: inline-block;
+  position: relative;
+  color: white;
+  background-color: #1abf47;
+  border-radius: 50%;
+  text-align: center;
+}
+
+ul.communication-list li a,
+ul.communication-list-small li a {
   color: #2c90f5;
   text-decoration: none;
 }
 
-ul.communication-list li a:hover {
+ul.communication-list li a:hover,
+ul.communication-list-small li a:hover {
   border-bottom: 0.3rem solid;
 }
 /*# sourceMappingURL=main.css.map */

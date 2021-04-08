@@ -99,7 +99,7 @@ html {
 
 //-----------------------------Presentaion
 .pres {
-    div {
+     div {
         position: relative;
         transition: all 0.3s ease-out;
     }
@@ -272,6 +272,70 @@ html {
             margin: 6rem 0 0 4rem;
         }
     }
+    &__seven {
+        background-color: $off-white;
+        &-des {
+            width: 70%;
+        }
+        
+        &-pricing {
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            width: 100%;
+            & >  div {
+                background-color: $white;
+                border-radius: 5px;
+                box-shadow: $shadow;
+                padding: 2rem 3rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5rem;
+                strong {
+                    font-size: 2.6rem;
+                    color: $color-primary;
+                }
+                a {
+                    display: inline-block;
+                    width: 40%;
+                    margin: auto;
+                }
+            }
+
+            .plan-a {
+                &-img {
+                    display: block;
+                    margin: 3rem auto 2rem;
+                    width: 70%;
+                }
+               
+            }
+
+            .plan-b {
+                &-img {
+                    display: grid;
+                    grid-template-columns: 0.6fr 1.4fr;
+                    gap: 1rem;
+                    margin: 3rem auto 2rem;
+                   
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &-img {
+            position: relative;
+            z-index: 6;
+            display: block;
+            width: 80%;
+            margin: 6rem 0 0 4rem;
+        }
+    }
 }
 
 nav {
@@ -316,7 +380,8 @@ nav {
             transition: all 0.4s ease-in-out;
         }
 
-        &:hover {
+        &:hover,
+        &.activep {
             border: 1px solid $color-primary;
             &::after {
                 background: $color-primary;
@@ -390,7 +455,7 @@ pre {
     vertical-align: top;
 }
 
-ul.communication-list {
+ul.communication-list{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin: 3rem 0 1rem 4rem;
@@ -399,12 +464,25 @@ ul.communication-list {
     grid-template-columns: 1fr 1fr;
     list-style-position: inside;
 }
+
+ul.communication-list-small {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 3rem 0 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+}
+
 @media only screen and (max-width: 37.5em) {
     ul.communication-list {
         display: none;
     }
 }
-ul.communication-list li {
+
+ul.communication-list li,
+ul.communication-list-small li {
     padding: 0.4rem 0 0.4rem 0;
     font-size: 2em;
     list-style-type: none;
@@ -412,11 +490,16 @@ ul.communication-list li {
     margin-bottom: 2rem;
     color: #121217;
 }
+ul.communication-list-small li {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
 ul.communication-list li:hover:before {
     color: white;
     background-color: #1abf47;
 }
-ul.communication-list li:before {
+ul.communication-list li:before{
     content: "\2713 ";
     font-size: 1.5rem;
     margin-left: -40px;
@@ -431,10 +514,29 @@ ul.communication-list li:before {
     border-radius: 50%;
     text-align: center;
 }
-ul.communication-list li a {
+
+ul.communication-list-small li:before {
+    content: "\2713 ";
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+    position: relative;
+    color: white;
+    background-color: #1abf47;
+    border-radius: 50%;
+    text-align: center;
+}
+
+ul.communication-list li a,
+ul.communication-list-small li a {
     color: #2c90f5;
     text-decoration: none;
 }
-ul.communication-list li a:hover {
+ul.communication-list li a:hover,
+ul.communication-list-small li a:hover {
     border-bottom: 0.3rem solid;
 }
