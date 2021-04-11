@@ -2,10 +2,12 @@
     padding: 1rem 5rem;
 }
 
-
+.header__logo{
+    height: 4rem;
+}
 
 .login-title{
-    padding: 14rem 15rem;
+    padding: 14rem 0 8rem;
 text-align: center;
 }
 
@@ -33,13 +35,26 @@ text-align: center;
 .login a{
      color: lightcoral;
 }
+.link-primary{
+    display: block;
+    text-align: right;
+    font-size: 1.4rem;
+}
 
 .login .btn{
-    height: 4rem;
-display: block;
-width: 15rem;
-margin-top: 6rem;
+    
+     margin-top: 3rem;
+     padding: 1rem 5rem;
+}
+.btn-center{
+    text-align: center;
 }
 .login__rocket{
-    padding: 0,0;
+    overflow: hidden;
+}
+.login__rocket .login__img{
+    position: absolute;
+    Right:0;
+    Bottom: -2rem;
+
 }
