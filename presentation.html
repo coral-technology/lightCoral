@@ -11,7 +11,7 @@
 
     <!-- Main CSS -->
     <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     <style>
         .scrolltop {
@@ -19,7 +19,6 @@
         }
 
         #particles-js {
-            position: fixed;
             width: 100%;
             left: 0;
             top: 0;
@@ -27,22 +26,20 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;
-            z-index: 3;
-            opacity: 0.4;
-            pointer-events: none;
+            z-index: 1;
+            opacity: 0.6;
         }
     </style>
 </head>
 
 <body>
     <div class='top'></div>
-    <div id="particles-js"></div>
 
     <!------------------------------------------------HEADER-->
     <header class="header inner">
 
         <!-------------------------LOGO-->
-        <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a> 
+        <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a>
 
         <!-------------------------NAVIGATION-->
         <div class="header__nav">
@@ -125,6 +122,7 @@
     <div class="container">
 
         <div class="portal">
+            <div id="particles-js"></div>
 
             <a class="toggle payer">
                 <img src="images/payer.png" alt="Payer">
@@ -139,18 +137,9 @@
 
         <div class="pres" id="target">
             <a class=" pres__back close">Back</a>
-            <nav>
-                <span tooltip="ONE WORKFLOW" flow="left"> <a href="#section-1">ONE WORKFLOW</a></span>
-                <span tooltip="COMMUNICATION" flow="left"> <a href="#section-2">COMMUNICATION</a></span>
-                <span tooltip="CONTRACT MANAGER" flow="left"> <a href="#section-3">CONTRACT MANAGER</a></span>
-                <span tooltip="MARKETPLACE" flow="left"> <a href="#section-4">MARKETPLACE</a></span>
-                <span tooltip="MOBILE APP" flow="left"> <a href="#section-5">MOBILE APP</a></span>
-                <span tooltip="USER EXPERIENCE - REDEFINED" flow="left"> <a href="#section-6">USER EXPERIENCE -
-                        REDEFINED</a></span>
-                <span tooltip="Pricing" flow="left"> <a href="#section-7" class="activep">Pricing</a></span>
-            </nav>
+
             <div class="pres__one" id="section-1">
-                <div class="pres__one-text">
+                <div class="pres__one-text"  data-aos="fade-down">
                     <h1 class="head-4 head-4--black">
                         One <span>workflow</span> -
                         Thousands of Providers </h1>
@@ -161,20 +150,19 @@
                         month on Coral.
                     </p>
                 </div>
-                <img src="images/pres1.png" class="pres__one-img  animate-this"
-                    alt="ONE WORKFLOW - THOUSANDS OF PROVIDERS">
+                <img src="images/pres1.png"  data-aos="fade-up" class="pres__one-img" alt="ONE WORKFLOW - THOUSANDS OF PROVIDERS">
 
 
             </div>
 
             <div class="pres__two" id="section-2">
 
-                <h1 class="head-4 head-4--black">
+                <h1 class="head-4 head-4--black" data-aos="fade-right">
                     All of your <span>communication</span> - In one place
                 </h1>
 
                 <div class="pres__two-text">
-                    <div>
+                    <div data-aos="fade-right">
                         <p class="text-primary">
                             Good bye email threads, hello Coral Communication. Manage all of your referrals, for
                             all providers in one place.
@@ -191,7 +179,7 @@
                         <p class="pres2-span mt-2"><strong>All in One Place</strong> </p>
                     </div>
 
-                    <img src="images/pres2.png" class="pres__two-img animate-this "
+                    <img src="images/pres2.png" data-aos="fade-left" class="pres__two-img"
                         alt="ALL OF YOUR COMMUNICATION - IN ONE PLACE">
                 </div>
 
@@ -199,8 +187,8 @@
 
             <div class="pres__three" id="section-3">
 
-                <img src="images/pres3.png" class="pres__three-img animate-this" alt="Contract Manager">
-                <div class="pres__three-text">
+                <img src="images/pres3.png" class="pres__three-img" data-aos="fade-up" alt="Contract Manager">
+                <div class="pres__three-text"  data-aos="fade-down">
                     <h1 class="head-4 head-4--black" data-swiper-parallax="-400px"><span>Contract</span>
                         Manager</h1>
                     <p class="text-primary">
@@ -219,7 +207,7 @@
 
 
                 <div class="pres__four-text">
-                    <div>
+                    <div data-aos="fade-up-right">
                         <h1 class="head-4 head-4--black"><span>MarketPlace</span> </h1>
                         <p class="text-primary">
                             Search for a patient need, and easily navigate through your own private
@@ -233,7 +221,7 @@
 
                         </ul>
                     </div>
-                    <img src="images/pres4.png" class="pres__four-img animate-this" alt="MarketPlace">
+                    <img src="images/pres4.png" data-aos="fade-up-left" class="pres__four-img" alt="MarketPlace">
                 </div>
 
             </div>
@@ -241,7 +229,7 @@
             <div class="pres__five" id="section-5">
 
 
-                <div class="pres__five-text">
+                <div class="pres__five-text" data-aos="flip-left">
                     <h1 class="head-4 head-4--black">
                         Mobile <span>App</span> </h1>
                     <ul class="communication-list" style="display: block;">
@@ -253,14 +241,14 @@
                     </ul>
 
                 </div>
-                <img src="images/pres5.png" class="pres__five-img thumbnail" alt="Coral Mobile Healthcare App ">
+                <img src="images/pres5.png" data-aos="flip-right" class="pres__five-img" alt="Coral Mobile Healthcare App ">
             </div>
 
             <div class="pres__six" id="section-6">
 
 
                 <div class="pres__six-text">
-                    <div>
+                    <div data-aos="zoom-in-left">
                         <h1 class="head-4 head-4--black"><span>User experience</span> - redefined </h1>
                         <p class="text-primary mt-5">
                             Coral is extremely easy to use, and takes on average less than 10 minutes to learn.
@@ -276,7 +264,7 @@
                             For organizations with 100,000+ lives, in-person on-boarding is available.
                         </p>
                     </div>
-                    <img src="images/pres6.png" class="pres__six-img animate-this" alt="User experience - redefined">
+                    <img src="images/pres6.png" data-aos="zoom-in-right" class="pres__six-img" alt="User experience - redefined">
                 </div>
 
             </div>
@@ -364,42 +352,25 @@
     <script src="js/particlesJS.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/scrolltosmooth@2.2.1/dist/scrolltosmooth.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        // AOS.init({
+        //     duration: 1000
+        // });
 
+   AOS.init({
+      offset: 200,
+      duration: 1000,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+
+   
+    </script>
 
     <script src="js/animation.js"></script>
-    <script>
-        var image = document.getElementsByClassName('thumbnail');
-        new simpleParallax(image, {
-            orientation: 'right'
-        });
 
-        var image2 = document.getElementsByClassName('thumbnail2');
-        new simpleParallax(image2, {
-            delay: 1,
-            transition: 'cubic-bezier(0,0,0,1)'
-        });
-        var image3 = document.getElementsByClassName('thumbnail3');
-        new simpleParallax(image3, {
-            delay: 1,
-            transition: 'cubic-bezier(0,0,0,1)'
-        });
-        var image4 = document.getElementsByClassName('thumbnail4');
-        new simpleParallax(image4, {
-            delay: 0.5,
-            transition: 'cubic-bezier(1,0,0,0)'
-        });
-
-
-        $(function () {
-            $('nav a').on('click', function () {
-                $(this).parent().find('a.active').removeClass('active');
-                $(this).addClass('active');
-            });
-        });
-    </script>
 </body>
 
 </html>

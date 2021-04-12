@@ -10,9 +10,10 @@ html {
 
 //-----------------------------Particles Override
 
-#particles-js.active {
-    opacity: 0.2;
-}
+// #particles-js.active {
+//     opacity: 0;
+   
+// }
 
 //--------------------------------Portal
 
@@ -25,7 +26,10 @@ html {
     overflow: visible;
     background: $white;
     width: 100%;
-    z-index: 2;
+    a {
+        position: relative;
+        z-index: 2;
+    }
     .payer {
         animation-name: payer;
         animation-duration: 7.5s;
@@ -73,9 +77,9 @@ html {
 }
 .portal.activeUp {
     visibility: hidden;
-    height: 0;
     z-index: 2;
     overflow: hidden;
+    height: 0;
 }
 
 #target {
@@ -87,10 +91,12 @@ html {
     overflow: hidden;
 }
 
+
 #target.active {
     visibility: visible;
     height: 100vh;
     overflow: visible;
+   
 }
 
 .Hide {
@@ -99,17 +105,11 @@ html {
 
 //-----------------------------Presentaion
 .pres {
-     div {
-        position: relative;
-        transition: all 0.3s ease-out;
-    }
     & > div {
         padding: 10rem;
-        height: 100vh;
         position: relative;
         z-index: 2;
-        scroll-snap-align: start;
-        background-attachment: fixed;
+       
     }
 
     &__back {
@@ -172,7 +172,7 @@ html {
         background-color: $white;
 
         &-text {
-            margin-top: 5rem;
+            margin-top: 1rem;
             display: flex;
             justify-content: stretch;
             align-items: flex-start;
@@ -247,7 +247,7 @@ html {
             position: relative;
             z-index: 6;
             display: block;
-            width: 60%;
+            width: 50%;
             margin: 2rem 0 0 10rem;
         }
     }
@@ -277,14 +277,14 @@ html {
         &-des {
             width: 70%;
         }
-        
+
         &-pricing {
             margin-top: 5rem;
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
             gap: 4rem;
             width: 100%;
-            & >  div {
+            & > div {
                 background-color: $white;
                 border-radius: 5px;
                 box-shadow: $shadow;
@@ -310,7 +310,6 @@ html {
                     margin: 3rem auto 2rem;
                     width: 70%;
                 }
-               
             }
 
             .plan-b {
@@ -319,7 +318,7 @@ html {
                     grid-template-columns: 0.6fr 1.4fr;
                     gap: 1rem;
                     margin: 3rem auto 2rem;
-                   
+
                     img {
                         display: block;
                         width: 100%;
@@ -455,7 +454,7 @@ pre {
     vertical-align: top;
 }
 
-ul.communication-list{
+ul.communication-list {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin: 3rem 0 1rem 4rem;
@@ -499,7 +498,7 @@ ul.communication-list li:hover:before {
     color: white;
     background-color: #1abf47;
 }
-ul.communication-list li:before{
+ul.communication-list li:before {
     content: "\2713 ";
     font-size: 1.5rem;
     margin-left: -40px;
@@ -540,3 +539,17 @@ ul.communication-list li a:hover,
 ul.communication-list-small li a:hover {
     border-bottom: 0.3rem solid;
 }
+
+
+.gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0s;
+  }
+
+
+
+  //------------------------------------------------TEST
+
+
+  
