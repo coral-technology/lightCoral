@@ -1,10 +1,21 @@
 //-------------------------------------------ABOUT US
 .aboutus {
-    padding: 8rem 15rem 0;
+    padding: 8rem 10rem 0;
     display: grid;
     grid-template-columns: 1.5fr 0.7fr;
     gap: 4rem;
     align-items: center;
+   
+
+    @include responsive(tab-port) {
+        padding: 8rem 5rem 0;
+    }
+    @include responsive(phone) {
+        grid-template-columns: 1fr;
+        padding: 8rem 3rem 0;
+        margin-top: 0;
+    }
+
     h2 {
         letter-spacing: 0;
         font-weight: 400;
@@ -14,20 +25,38 @@
         font-size: 1.6rem;
         margin: 2rem 0;
     }
+   
     &__img {
         width: 100%;
+        @include responsive(phone) {
+            grid-row: 1/2;
+            width: 60%;
+            margin: auto;
+        }
     }
 }
 
 //-------------------------------------------HISTORY
 
 .history {
-    padding: 5rem 15rem 7rem;
+    padding: 5rem 10rem 7rem;
     // background-color: $off-white;
+
+    @include responsive(tab-port) {
+        padding: 5rem 5rem 0;
+      }
+
+    @include responsive(phone) {
+        padding: 5rem 3rem 0;
+        margin-top: 0;
+    }
     &__contain {
         display: grid;
         grid-template-columns: 0.5fr 1.5fr;
         gap: 4rem;
+        @include responsive(phone) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -37,12 +66,22 @@
 
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
     margin-bottom: 5rem;
+    @include responsive(phone) {
+        margin-top: 5rem;
+    }
 }
 
 .timelineCont .row {
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
+
+    @include responsive(phone) {
+        grid-template-columns: 0.5fr 1fr;
+    }
+
     div {
         position: relative;
     }
@@ -106,7 +145,7 @@
 }
 
 #timeline div .text p {
-    margin: 0 50px 0;
+    margin: 0 20px 0;
     width: 100%;
     display: none;
     font-size: 1.6rem;
@@ -120,9 +159,23 @@
     }
     .vector {
         position: absolute;
-        left: -90%;
+        left: -60rem;
         top: 4rem;
         height: 30rem;
+        @include responsive(tab-port) {
+            position: absolute;
+            left: -40rem;
+            top: 4rem;
+            height: 30rem;
+        }
+        @include responsive(phone) {
+            position: relative;
+            right: unset;
+            top: unset;
+            height: 16rem;
+            display: block;
+            margin: -3rem 0 4rem 4rem;
+        }
     }
 }
 
@@ -134,8 +187,18 @@
 
 .values {
     background-color: $color-primary;
-    padding: 5rem 15rem;
+    padding: 5rem 10rem;
+    @include responsive(tab-port) {
+        padding: 5rem 5rem ;
+      }
 
+    @include responsive(phone) {
+        padding: 5rem 3rem;
+    }
+
+    h4 {
+        text-align: center;
+    }
     &-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -162,7 +225,7 @@
         background-color: transparent;
         font-size: 1.5rem;
         padding: 7rem 0 2rem;
-        text-align: left;
+        text-align: center;
         border-radius: 3px;
         transition: all 0.3s ease;
         border-bottom: 3px solid $color-primary;
@@ -223,8 +286,14 @@
 
 .teams {
     background-color: $white;
-    padding: 0 10rem 5rem;
+    padding: 5rem 10rem ;
+    @include responsive(tab-port) {
+        padding: 5rem 5rem ;
+      }
 
+    @include responsive(phone) {
+        padding: 5rem 3rem;
+    }
     .team {
         margin: 10rem 0 0;
         display: grid;

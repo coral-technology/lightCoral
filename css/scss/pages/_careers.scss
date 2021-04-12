@@ -1,4 +1,113 @@
+//-----------------Custom Contact
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 10rem;
+
+    @include responsive(tab-port) {
+        padding: 5rem 5rem 0;
+    }
+
+    @include responsive(phone) {
+        display: block;
+        padding: 5rem 3rem;
+    }
+
+    &-details {
+        @include responsive(phone) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+//--------------------------CAREERS
+
 .careers {
-    grid-template-columns: 1.3fr 0.7fr !important;
-    gap: 5rem !important;
+    grid-template-columns: 1.3fr 0.7fr;
+
+    @include responsive(tab-port) {
+        grid-template-columns: 1fr;
+    }
+
+    @include responsive(phone) {
+        display: block;
+    }
+
+
+    gap: 3rem !important;
+    &__panel {
+        max-height: 95vh;
+        overflow-y: auto;
+        padding-right: 2rem;
+        @include scroll-light;
+    }
+}
+
+.working {
+    padding: 4rem 10rem 6rem;
+    background-color: $off-white;
+    @include responsive(tab-port) {
+        padding: 4rem 5rem 6rem;
+    }
+
+    @include responsive(phone) {
+        padding: 4rem 3rem 6rem;
+    }
+
+    &__features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+
+        @include responsive(phone) {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+    }
+
+    &__feature {
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 1.4rem;
+        }
+        img {
+            margin-right: 3rem;
+            display: inline-block;
+        }
+    }
+}
+
+.positions {
+    padding: 4rem 10rem 6rem;
+    @include responsive(tab-port) {
+        padding: 4rem 5rem 6rem;
+    }
+
+    @include responsive(phone) {
+        padding: 4rem 3rem 6rem;
+    }
+    &__job {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+        border-bottom: 1px solid $color-grey-lighter;
+
+        @include responsive(phone) {
+           display: grid;
+           grid-template-columns: 1.2fr 0.8fr;
+        }
+
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    div {
+        &:last-child {
+            border: none;
+        }
+    }
 }

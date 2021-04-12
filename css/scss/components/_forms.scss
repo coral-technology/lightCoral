@@ -1,5 +1,5 @@
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 
   &-two {
     display: grid;
@@ -61,6 +61,9 @@
     //padding-top: 1rem;
     // text-indent: 8px;
   }
+}
+select.form-control {
+  background: $white url(../images/arrow-down.png) no-repeat right center;
 }
 
 .label {
@@ -170,4 +173,109 @@ textarea.form-control {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+//-------------------------------UPLOAD
+
+input[type="file"] {
+  display: none;
+}
+
+.js .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  max-width: 100%;
+  width: 100%;
+  font-size: 20px;
+  /* 20px */
+  // font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.no-js .inputfile + label {
+  display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label {
+  border: 1px solid $color-grey;
+  background-color: $white;
+  padding: 0;
+  border-radius: 0.5rem;
+}
+
+.inputfile + label .btn-inputfile {
+  width: 1.4rem;
+  height: 1px;
+
+  font-style: normal;
+  font-size: 1.4rem;
+}
+.archive-name {
+  padding: 0.5rem ;
+  display: inline-flex;
+  align-items: center;
+  img {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
+
+.inputfile + label .archive-name {
+  width: 60%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  color: $black;
+  font-size: 1.4rem;
+}
+
+.inputfile + label .btn-inputfile {
+  color: #fff;
+  background-color: $color-primary;
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  &::after {
+    @include after-before;
+    width: 1px;
+    height: 1.4rem;
+    background-color: $color-primary;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.inputfile:focus + label .btn-inputfile,
+.inputfile.has-focus + label .btn-inputfile,
+.inputfile + label:hover .btn-inputfile {
+  background-color: darken($color-primary, 5%);
+}
+
+@media screen and (max-width: 50em) {
+  .inputfile + label .btn-inputfile {
+    display: block;
+  }
 }

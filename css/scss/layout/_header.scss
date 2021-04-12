@@ -30,7 +30,7 @@
 
     @include responsive(phone) {
         padding: 0 3rem;
-        grid-template-columns: 0.6fr 0.5fr 0.1fr;
+        grid-template-columns: 0.5fr 0.6fr 0.2fr;
         gap: 0;
     }
     //---------------------------------------Logo
@@ -157,12 +157,12 @@
     }
 
     @include responsive(phone) {
-        grid-template-columns: 0.6fr 0.5fr 0.1fr;
+        grid-template-columns: 0.5fr 0.6fr 0.2fr;
         gap: 0;
     }
 
     .header__logo {
-        height: 2.5rem;
+        height: 3rem;
     }
     .header__nav {
         padding-top: 0.8rem;
@@ -230,12 +230,12 @@
     }
 
     @include responsive(phone) {
-        grid-template-columns: 0.6fr 0.5fr 0.1fr;
+        grid-template-columns: 0.5fr 0.6fr 0.2fr;
         gap: 0;
     }
 
     .header__logo {
-        height: 2.5rem;
+        height: 3rem;
     }
     .header__nav {
         padding-top: 0.8rem;
@@ -290,8 +290,16 @@
 
 .inner-header {
     margin-top: 6rem;
-    padding: 2rem 15rem 0;
+    padding: 2rem 10rem 0;
     border-bottom: 1px solid $color-grey-lighter;
+
+    @include responsive(tab-port) {
+        padding: 2rem 5rem 0;
+      }
+    @include responsive(phone) {
+        padding: 2rem 3rem 0;
+      }
+
     .head-1 {
         font-size: 3.4rem;
         font-weight: 600;

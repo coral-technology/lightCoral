@@ -8,24 +8,37 @@
     overflow: hidden;
     z-index: 32;
 
-    &-city {
-        position: absolute;
-        bottom: 0rem;
-        left: 50%;
-        transform: translateX(-50%);
+ 
+
+    @include responsive(phone) {
+       display: block;
+       overflow: visible;
+       height: auto;
     }
+
+
+
     &-img {
         position: absolute;
         top: 6rem;
         left: 58%;
         transform: translateX(-58%);
         z-index: 0;
-        // animation-name: right-left;
-        // animation-duration: 4.5s;
-        // animation-iteration-count: infinite;
-        // animation-timing-function: ease-in-out;
-        // animation-direction: alternate;
         width: 77%;
+
+        @include responsive(tab-port) {
+            width: 90%;
+            top:25rem;
+
+        }
+
+        @include responsive(phone) {
+            position: relative;
+            width: 85%;
+            top: 12rem;
+        }
+
+
         h1 {
             color: $color-primary;
             font-size: 5.6rem;
@@ -73,15 +86,15 @@
             color: $color-primary;
         }
         @include responsive(tab-land) {
-            margin-left: 6rem;
+            margin-top: 2rem;
         }
 
         @include responsive(tab-port) {
-            margin-left: 5rem;
+            margin-top: -14rem;
         }
 
         @include responsive(phone) {
-            margin-left: 3rem;
+            margin-top: 2rem;
         }
     }
 
@@ -172,6 +185,7 @@
 #particles-js {
     position: absolute;
     width: 100%;
+   
     left: 0;
     top: 0;
     background-image: url("");
@@ -181,6 +195,14 @@
     z-index: 2;
     opacity: 0.5;
     animation: test 5s infinite ease-in;
+    @include responsive(tab-port) {
+        top:40rem;
+
+    }
+    @include responsive(phone) {
+        top: 5rem;
+    }
+
 }
 
 /* ---- stats.js ---- */

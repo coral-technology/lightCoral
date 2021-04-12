@@ -13,7 +13,7 @@
     <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
     <link href="css/contactus.css?ver=1.2.1" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="images/icon.png">
-
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <header class="header inner">
 
         <!-------------------------LOGO-->
-        <img src="images/logo.png" alt="" class="header__logo">
+       <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a> 
 
         <!-------------------------NAVIGATION-->
         <div class="header__nav">
@@ -37,7 +37,7 @@
                 </li>
 
                 <li class="header__nav--item">
-                    <a href="#" class="header__nav--link">Platform</a>
+                    <a href="presentation.html" class="header__nav--link">Platform</a>
                 </li>
 
                 <!-- <li class="header__nav--item">
@@ -49,7 +49,7 @@
                 </li> -->
 
                 <li class="header__nav--item">
-                    <a href="#" class="header__nav--link">Contact</a>
+                    <a href="contact.html" class="header__nav--link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -60,7 +60,7 @@
             <div class="search">
                 <a href="https://www.linkedin.com/company/coral/" class="linkedin linkedin-header" target="_blank">
                     <svg>
-                        <use xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-linkedin">
+                        <use xlink:href="images/sprite.svg#icon-linkedin">
                         </use>
                     </svg>
                 </a>
@@ -70,7 +70,7 @@
             <div class="login">
                 <a href="#" class="btn btn-primary">
                     <svg>
-                        <use xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-user">
+                        <use xlink:href="images/sprite.svg#icon-user">
                         </use>
                     </svg>
                     Login</a>
@@ -87,19 +87,18 @@
 
             <div class="navigation__background">&nbsp;</div>
 
-            <nav class="navigation__nav">
+            <div class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Home</a>
                     </li>
                     <li class="navigation__item"><a href="about.html" class="navigation__link"><span>02</span>About</a>
                     </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Platform</a>
-                    </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Plans</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>News</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact</a></li>
+                    <li class="navigation__item"><a href="presentation.html"
+                            class="navigation__link"><span>03</span>Platform</a></li>
+                    <li class="navigation__item"><a href="contact.html"
+                            class="navigation__link"><span>04</span>Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
 
     </header>
@@ -120,7 +119,7 @@
     <div class="container">
         <div class="contactus careers">
 
-            <div class="contactus-details">
+            <div class="contactus-details careers__panel">
                 <h2 class="head-5"> Description</h2>
                 <p>
                     We are looking for a good JavaScript developer who is proficient with React.js.
@@ -148,26 +147,68 @@
                     -Knowledge of isomorphic React is a plus.
                     -2 Years experience at least.
                 </p>
+
+                <h2 class="head-5 mt-5"> Responsibilities</h2>
+
+                <p>
+                    -Developing new user-facing features using React.js
+                    -Building reusable components and front-end libraries for future use
+                    -Translating designs and wireframes into high quality code
+                    -Optimizing components for maximum performance across a vast array of web-capable devices and
+                    browsers
+                </p>
+                <h2 class="head-5 mt-5"> Requirements</h2>
+                <p>
+
+                    -Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model
+                    -Thorough understanding of React.js and its core principles
+                    -Experience with popular React.js workflows (such as Flux or Redux)
+                    -Familiarity with newer specifications of EcmaScript
+                    -Experience with data structure libraries (e.g., Immutable.js)
+                    -Knowledge of isomorphic React is a plus.
+                    -2 Years experience at least.
+                </p>
+
+                <h2 class="head-5 mt-5"> Responsibilities</h2>
+
+                <p>
+                    -Developing new user-facing features using React.js
+                    -Building reusable components and front-end libraries for future use
+                    -Translating designs and wireframes into high quality code
+                    -Optimizing components for maximum performance across a vast array of web-capable devices and
+                    browsers
+                </p>
+                <h2 class="head-5 mt-5"> Requirements</h2>
+                <p>
+
+                    -Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model
+                    -Thorough understanding of React.js and its core principles
+                    -Experience with popular React.js workflows (such as Flux or Redux)
+                    -Familiarity with newer specifications of EcmaScript
+                    -Experience with data structure libraries (e.g., Immutable.js)
+                    -Knowledge of isomorphic React is a plus.
+                    -2 Years experience at least.
+                </p>
             </div>
 
             <!--------------------------Contact Us-------->
             <div class="contacts__form">
-                <h2 class="head-5"> Get in touch</h2>
-                <div class="form-group mt-2">
+                <h2 class="head-5"> Apply Now</h2>
+                <div class="form-group mt-4">
 
                     <input type="text" id="name" placeholder="Name*" class="form-control">
-
+                    <!-- <label for="name" class="label">Name</label> -->
                 </div>
 
 
                 <div class="form-group form-group-two">
                     <div>
                         <input type="text" placeholder="Email*" id="Email" class="form-control">
-                        <label class="label" for="Email">Email*</label>
+                        <!-- <label for="Email" class="label">Email</label> -->
                     </div>
                     <div>
                         <input type="text" placeholder="Phone" id="Phone" class="form-control">
-                        <label class="label" for="Phone">Phone</label>
+                        <!-- <label for="Phone" class="label">Phone</label> -->
                     </div>
                 </div>
 
@@ -181,19 +222,31 @@
                 <div class="form-group">
                     <textarea style="resize: none;" name="" id="Message" placeholder="Cover letter (optional)" id=""
                         cols="30" rows="5" class="form-control"></textarea>
+
+                </div>
+
+
+                <div class="form-group mt-1">
+                    <input type="file" name="file-7[]" id="file-7" class="inputfile" data-multiple-caption="{count} arquivos selecionados" multiple>
+                    <label for="file-7">
+                        <span class="archive-name">
+                            <img src="images/fileupload.png" alt="">
+                            Attach resume</span>
+                        <span class="btn-inputfile"> </span></label>
+                        <div class="text-small ml-2">Formats: pdf, .doc, .docx, .jpg, .png | Size: max. 15MB</div>
+                  </div>
+
+
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                 </div>
 
                 <div class="btns mt-3">
-                    <button class="btn btn-primary">Send Message
-                        <svg class="arrow">
-                            <use xlink:href="images/sprite.svg#icon-send"></use>
-                        </svg>
+                    <button class="btn btn-primary">Apply Now
+                       
                     </button>
                 </div>
-
             </div>
-
-
         </div>
 
 
@@ -218,7 +271,7 @@
                     <a>
                         <svg>
                             <use
-                                xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-arrow-right">
+                                xlink:href="images/sprite.svg#icon-arrow-right">
                             </use>
                         </svg>
                     </a>
@@ -226,14 +279,14 @@
                 <div class="footer__top-newsletter--social">
                     <a href="https://web.facebook.com/coral.technology.services" target="_blank" class="fb">
                         <svg>
-                            <use xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-fb">
+                            <use xlink:href="images/sprite.svg#icon-fb">
                             </use>
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/company/coral/" target="_blank" class="linkedin">
                         <svg>
                             <use
-                                xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-linkedin">
+                                xlink:href="images/sprite.svg#icon-linkedin">
                             </use>
                         </svg>
                     </a>
@@ -269,7 +322,7 @@
                     <li>
                         <svg>
                             <use
-                                xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-address">
+                                xlink:href="images/sprite.svg#icon-address">
                             </use>
                         </svg>
                         123 Park Avenue, New York,
@@ -277,14 +330,14 @@
                     <li>
                         <svg>
                             <use
-                                xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-phone">
+                                xlink:href="images/sprite.svg#icon-phone">
                             </use>
                         </svg>
                         +1 613 1234 5678</li>
                     <li><a href="mailto:info@coral.io">
                             <svg>
                                 <use
-                                    xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-mail">
+                                    xlink:href="images/sprite.svg#icon-mail">
                                 </use>
                             </svg>
                             info@coral.io</a></li>
@@ -310,7 +363,7 @@
     <div class='scrolltop'>
         <div class='scroll icon'>
             <svg>
-                <use xlink:href="https://coral-technology.github.io/lightCoral/images/sprite.svg#icon-rocket"></use>
+                <use xlink:href="images/sprite.svg#icon-rocket"></use>
             </svg>
         </div>
     </div>
