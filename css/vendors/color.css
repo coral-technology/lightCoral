@@ -91,7 +91,7 @@
 .fs-carousel-link:hover,
 .lg-actions .lg-next:hover,
 .lg-actions .lg-prev:hover {
-    color: #fac921;
+    color: #f86f6f;
 }
 .color-bg,
 .color-btn,
@@ -143,18 +143,18 @@
 .about-widget h5:after,
 .serv-works-item .hidden-works-item-text h3:before,
 .main-about h2:before {
-    background: #fac921;
+    background: #f86f6f;
 }
 
 #twitts-container ul li:hover .timePosted a:after {
-    border-top-color: #fac921;
+    border-top-color: #f86f6f;
 }
 
 .gradient-bg {
-    background-color: #fac921;
-    background: -webkit-gradient(linear, 0% 0%, 0% 50%, from(#fac921), to(#305a88));
-    background: -webkit-linear-gradient(top, #fac921, #305a88);
-    background: -moz-linear-gradient(top, #fac921, #305a88);
-    background: -ms-linear-gradient(top, #fac921, #305a88);
-    background: -o-linear-gradient(top, #fac921, #305a88);
+    background-color: #f86f6f;
+    background: -webkit-gradient(linear, 0% 0%, 0% 50%, from(#f86f6f), to(#305a88));
+    background: -webkit-linear-gradient(top, #f86f6f, #305a88);
+    background: -moz-linear-gradient(top, #f86f6f, #305a88);
+    background: -ms-linear-gradient(top, #f86f6f, #305a88);
+    background: -o-linear-gradient(top, #f86f6f, #305a88);
 }

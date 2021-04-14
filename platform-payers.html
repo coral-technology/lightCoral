@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Coral - Platform</title>
+    <title>Coral - Platform for Payers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Nunito Sans Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     <style>
+       
         .scrolltop {
             bottom: 12rem !important;
         }
@@ -53,7 +54,7 @@
                 </li>
 
                 <li class="header__nav--item">
-                    <a href="presentation.html" class="header__nav--link active">Platform</a>
+                    <a href="platform.html" class="header__nav--link active">Platform</a>
                 </li>
 
                 <!-- <li class="header__nav--item">
@@ -121,25 +122,14 @@
 
     <div class="container">
 
-        <div class="portal">
-            <div id="particles-js"></div>
 
-            <a class="toggle payer">
-                <img src="images/payer.png" alt="Payer">
-                Payer</a>
-
-            <a href="#" class="provider">
-                <img src="images/provider.png" alt="Provider">
-                Provider</a>
-
-        </div>
 
 
         <div class="pres" id="target">
-            <a class=" pres__back close">Back</a>
+            <a class="pres__back close" href="platform.html">Back</a>
 
             <div class="pres__one" id="section-1">
-                <div class="pres__one-text"  data-aos="fade-down">
+                <div class="pres__one-text" data-aos="fade-down">
                     <h1 class="head-4 head-4--black">
                         One <span>workflow</span> -
                         Thousands of Providers </h1>
@@ -150,7 +140,8 @@
                         month on Coral.
                     </p>
                 </div>
-                <img src="images/pres1.png"  data-aos="fade-up" class="pres__one-img" alt="ONE WORKFLOW - THOUSANDS OF PROVIDERS">
+                <img src="images/pres1.png" data-aos="fade-up" class="pres__one-img"
+                    alt="ONE WORKFLOW - THOUSANDS OF PROVIDERS">
 
 
             </div>
@@ -188,7 +179,7 @@
             <div class="pres__three" id="section-3">
 
                 <img src="images/pres3.png" class="pres__three-img" data-aos="fade-up" alt="Contract Manager">
-                <div class="pres__three-text"  data-aos="fade-down">
+                <div class="pres__three-text" data-aos="fade-down">
                     <h1 class="head-4 head-4--black" data-swiper-parallax="-400px"><span>Contract</span>
                         Manager</h1>
                     <p class="text-primary">
@@ -207,7 +198,7 @@
 
 
                 <div class="pres__four-text">
-                    <div data-aos="fade-up-right">
+                    <div data-aos="fade-up">
                         <h1 class="head-4 head-4--black"><span>MarketPlace</span> </h1>
                         <p class="text-primary">
                             Search for a patient need, and easily navigate through your own private
@@ -221,7 +212,7 @@
 
                         </ul>
                     </div>
-                    <img src="images/pres4.png" data-aos="fade-up-left" class="pres__four-img" alt="MarketPlace">
+                    <img src="images/pres4.png" data-aos="fade-down" class="pres__four-img" alt="MarketPlace">
                 </div>
 
             </div>
@@ -229,7 +220,7 @@
             <div class="pres__five" id="section-5">
 
 
-                <div class="pres__five-text" data-aos="flip-left">
+                <div class="pres__five-text" data-aos="zoom-out-up">
                     <h1 class="head-4 head-4--black">
                         Mobile <span>App</span> </h1>
                     <ul class="communication-list" style="display: block;">
@@ -241,7 +232,8 @@
                     </ul>
 
                 </div>
-                <img src="images/pres5.png" data-aos="flip-right" class="pres__five-img" alt="Coral Mobile Healthcare App ">
+                <img src="images/pres5.png" data-aos="zoom-out-down" class="pres__five-img"
+                    alt="Coral Mobile Healthcare App ">
             </div>
 
             <div class="pres__six" id="section-6">
@@ -264,21 +256,25 @@
                             For organizations with 100,000+ lives, in-person on-boarding is available.
                         </p>
                     </div>
-                    <img src="images/pres6.png" data-aos="zoom-in-right" class="pres__six-img" alt="User experience - redefined">
+                    <img src="images/pres6.png" data-aos="zoom-in-right" class="pres__six-img"
+                        alt="User experience - redefined">
                 </div>
 
             </div>
 
             <div class="pres__seven" id="section-7">
-                <h1 class="head-4 head-4--black"><span>Pricing</span> </h1>
-                <p class="text-primary pres__seven-des">
-                    At Coral, we’re very transparent, some might say to transparent. We disagree. here is our pricing.
-                    No hidden fees. No surprises. Everything is right here.
-                </p>
+                <div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h1 class="head-4 head-4--black"><span>Pricing</span> </h1>
+                    <p class="text-primary pres__seven-des">
+                        At Coral, we’re very transparent, some might say to transparent. We disagree. here is our
+                        pricing.
+                        No hidden fees. No surprises. Everything is right here.
+                    </p>
+                </div>
 
                 <div class="pres__seven-pricing">
 
-                    <div class="plan-a">
+                    <div class="plan-a" data-aos="fade-down-right">
                         <h1 class="head-4 head-4--black">Coral Web App + marketPlace
                             <br>
                             + Mobile App
@@ -292,7 +288,7 @@
                         <img src="images/plan-a.png" class="plan-a-img" alt="Coral Web App + marketPlace + Mobile App">
                         <a href="#" class="btn btn-white">Sign Up</a>
                     </div>
-                    <div class="plan-b">
+                    <div class="plan-b" data-aos="fade-down-left">
                         <h1 class="head-4 head-4--black">White Label
                         </h1>
                         <p>
@@ -353,23 +349,23 @@
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animation.js"></script>
 
     <script>
         // AOS.init({
         //     duration: 1000
         // });
 
-   AOS.init({
-      offset: 100,
-      duration: 1000,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+            transition: "ease-In-Out",
+            delay: 60,
+        });
 
-   
+       
     </script>
 
-    <script src="js/animation.js"></script>
 
 </body>
 

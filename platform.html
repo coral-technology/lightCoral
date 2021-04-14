@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Coral - Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Nunito Sans Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+  
+</head>
+
+<body>
+  
+    <!------------------------------------------------HEADER-->
+    <header class="header inner">
+
+        <!-------------------------LOGO-->
+        <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a>
+
+        <!-------------------------NAVIGATION-->
+        <div class="header__nav">
+            <ul class="header__nav--list">
+                <li class="header__nav--item">
+                    <a href="index.html" class="header__nav--link">Home</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="about.html" class="header__nav--link">About</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="platform.html" class="header__nav--link active">Platform</a>
+                </li>
+
+                <!-- <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">Plans</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">News</a>
+                </li> -->
+
+                <li class="header__nav--item">
+                    <a href="contact.html" class="header__nav--link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-------------------------USER SECTION-->
+        <div class="header__user">
+            <!--------Search-->
+            <div class="search">
+                <a href="https://www.linkedin.com/company/coral/" class="linkedin linkedin-header" target="_blank">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-linkedin">
+                        </use>
+                    </svg>
+                </a>
+            </div>
+            <div class="line"></div>
+            <!--------Login Area-->
+            <div class="login">
+                <a href="#" class="btn btn-primary">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-user">
+                        </use>
+                    </svg>
+                    Login</a>
+            </div>
+        </div>
+
+        <!------------------------------------------------Responsive Navigation-->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Home</a>
+                    </li>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link"><span>02</span>About</a>
+                    </li>
+                    <li class="navigation__item"><a href="presentation.html"
+                            class="navigation__link"><span>03</span>Platform</a></li>
+                    <li class="navigation__item"><a href="contact.html"
+                            class="navigation__link"><span>04</span>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="portal">
+            <div id="particles-js"></div>
+
+            <a class="toggle payer" href="platform-payers.html">
+                <img src="images/payer.png" alt="Payer">
+                Payer</a>
+
+            <a href="platform-providers.html" class="provider">
+                <img src="images/provider.png" alt="Provider">
+                Provider</a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particlesJS.js"></script>
+
+
+</body>
+
+</html>

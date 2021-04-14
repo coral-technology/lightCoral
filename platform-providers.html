@@ -1,36 +1,44 @@
-﻿<!doctype html>
-<html lang="en-US">
+﻿<!DOCTYPE HTML>
+<html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--=============== basic  ===============-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Presentaion</title>
-
+    <title>Coral - Platform for Providers</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--=============== css  ===============-->
+    <link type="text/css" rel="stylesheet" href="css/vendors/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/vendors/plugins.css">
+    <link type="text/css" rel="stylesheet" href="css/vendors/style.css">
+    <link href="css/vendors/custom.css?ver=1.2.1" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/vendors/color.css">
+    <!--=============== favicons ===============-->
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/vendors/style2.css" media="all" />
-    <script src='js/main2.js' type="text/javascript"></script>
-
-    <!-- Main CSS -->
-    <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
-
 </head>
 
-<body
-    class="home page-template page-template-page-full-slider page-template-page-full-slider-php page page-id-67 wp-embed-responsive emilynolan-custom-font transition-effect">
+<body>
+
+    <!--loader-->
+    <div class="loader-wrap">
+        <div class="pin"></div>
+    </div>
 
     <!------------------------------------------------HEADER-->
-    <header class="header inner">
+    <header class="header inner text-left">
 
         <!-------------------------LOGO-->
-        <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a> 
+        <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a>
 
         <!-------------------------NAVIGATION-->
         <div class="header__nav">
             <ul class="header__nav--list">
                 <li class="header__nav--item">
-                    <a href="index.html" class="header__nav--link">Home</a>
+                    <a href="index.html" class="header__nav--link active">Home</a>
                 </li>
 
                 <li class="header__nav--item">
@@ -38,19 +46,19 @@
                 </li>
 
                 <li class="header__nav--item">
-                    <a href="platform-providers.html" class="header__nav--link active">Platform</a>
+                    <a href="platform.html" class="header__nav--link">Platform</a>
                 </li>
 
                 <!-- <li class="header__nav--item">
-                    <a href="#" class="header__nav--link">Plans</a>
-                </li>
+                        <a href="#" class="header__nav--link">Plans</a>
+                    </li>
+    
+                    <li class="header__nav--item">
+                        <a href="#" class="header__nav--link">News</a>
+                    </li> -->
 
                 <li class="header__nav--item">
-                    <a href="#" class="header__nav--link">News</a>
-                </li> -->
-
-                <li class="header__nav--item">
-                    <a href="#" class="header__nav--link">Contact</a>
+                    <a href="contact.html" class="header__nav--link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -61,18 +69,16 @@
             <div class="search">
                 <a href="https://www.linkedin.com/company/coral/" class="linkedin linkedin-header" target="_blank">
                     <svg>
-                        <use xlink:href="images/sprite.svg#icon-linkedin">
-                        </use>
+                        <use xlink:href="images/sprite.svg#icon-linkedin"></use>
                     </svg>
                 </a>
             </div>
             <div class="line"></div>
             <!--------Login Area-->
             <div class="login">
-                <a href="#" class="btn btn-primary">
+                <a href="login.html" class="btn btn-primary">
                     <svg>
-                        <use xlink:href="images/sprite.svg#icon-user">
-                        </use>
+                        <use xlink:href="images/sprite.svg#icon-user"></use>
                     </svg>
                     Login</a>
             </div>
@@ -88,69 +94,81 @@
 
             <div class="navigation__background">&nbsp;</div>
 
-            <nav class="navigation__nav">
+            <div class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a>
+                    <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Home</a>
                     </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>About</a>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link"><span>02</span>About</a>
                     </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Platform</a>
-                    </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Plans</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>News</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact</a></li>
+                    <li class="navigation__item"><a href="presentation.html"
+                            class="navigation__link"><span>03</span>Platform</a></li>
+                    <li class="navigation__item"><a href="contact.html"
+                            class="navigation__link"><span>04</span>Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
 
     </header>
+    <!--loader end-->
+    <!-- Main  -->
 
-    <div class="ms-main-container">
-        <div id="particles-js"></div>
-        <!-- <div class="content-overlay"></div> -->
-        <main id="main" class="ms-container">
+    <div class="pres">
+        <a class="pres__back close" href="platform.html">Back</a>
+    </div>
 
-            <div class="swiper-container">
-
-                <div class="swiper-wrapper" data-direction="vertical" data-autoplay="true" data-loop="false">
-
-
-                    <div class="swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-inner" data-swiper-parallax="45%">
-                            <!-- <div class="overlay"></div> -->
-                            <div class="slide-inner--image" style="background-color: #f8f8f8 ;">
-                                <img src="images/pres1.png" class="pres1" alt="">
-
-
-                            </div>
-                            <div class="slide-inner--info pos1">
-                                <h1 class="h1" data-swiper-parallax="-400px">
-                                    One <span>workflow</span>
-                                    Thousands of Providers </h1>
-                                <span class="pres1-span">
-                                    Find a provider, send them a case. Get notified when you need to check Coral. It’s
-                                    that easy.<br />
-                                    On average, a three person care navigator team can manage between 400-1000 cases per
-                                    month on Coral.
-                                </span>
-                                <a href="#" class="ms-btn--slider mt-2">See Prices</a>
-                            </div>
-                        </div>
+    <div id="main"  data-scrollax-parent="true">
+        <div class="body-bg"></div>
+        <!--landing-hero-container-->
+        <div class="landing-hero-container fl-wrap full-height">
+            <!-- <div class="landing-logo"><img src="images/logo.png" alt=""></div> -->
+            <div class="landing-hero-text ">
+                <div class="landing-hero-text-block" data-scrollax="properties: { translateX: '-100px' }">
+                    <h1>One <span>workflow</span>  Thousands of Payers</h1>
+                    <h3>Find a provider, send them a case. Get notified when you need to check Coral. It’s that easy.
+                        On average, a three person care navigator team can manage between 400-1000 cases per month on
+                        Coral.</h3>
+                    <a href="#sec2" class="custom-scroll-link btn float-btn flat-btn color-btn mar-top">Request Demo</a>
+                </div>
+            </div>
+            <div class="sec-lines"></div>
+            <div class="bg" data-bg="images/workflow-1.png" ></div>
+            <div class="scroll-down-dec">
+                <div class="scroll-down-wrap">
+                    <div class="mousey">
+                        <div class="scroller"></div>
                     </div>
-                    <div class="swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-inner" data-swiper-parallax="45%">
-                            <!-- <div id="particles-js"></div> -->
-                            <div class="slide-inner--image" style="background-color: #fff7f7;">
-                                <img src="images/pres2.png" class="pres2" alt="">
+                    <span>Scroll Down</span>
+                </div>
+            </div>
+        </div>
+        <!--landing-hero-container end-->
+        <!--landing-hero end-->
+        <div class="content landing-content">
+            <!-- section  -->
+            <section id="sec2" data-scrollax-parent="true">
+               
+                <div class="container" data-scrollax-parent="true">
+
+                    <div class="section-subtitle" data-scrollax="properties: { translateY: '-350px' }">
+                        Communication<span>//</span></div>
+
+                    <!--parallax-item -->
+                    <div class="parallax-item nth_chid  fl-wrap" data-scrollax-parent="true">
+                        <div class="row">
+                            <div class="col-md-6 mt-6">
+                                <a><img src="images/pres1.png"  data-scrollax="properties: { translateX: '-100px' }" alt=""></a>
                             </div>
-                            <div class="slide-inner--info pos1">
-                                <h1 class="h1" data-swiper-parallax="-400px">
-                                    All of your <span>communication</span> - In one place</h1>
-                                <p class="pres2-span">
-                                    Good bye email threads, hello Coral Communication. Manage all of your referrals, for
-                                    all providers in one place.
-                                </p>
-                                <ul class="communication-list">
+                            <div class="col-md-6">
+                               
+                                <h3 class="mt-3" data-scrollax="properties: { translateX: '100px' }"><a>
+                                        All of your <span> communication </span> - In one place
+                                    </a>
+                                    <small>
+                                        Good bye email threads, hello Coral Communication. Manage all of your referrals, for all providers in one place.
+                                    
+                                    </small>
+                                </h3>
+                                <ul class="communication-list"  data-scrollax="properties: { translateX: '100px' }">
                                     <li>@ mentions</li>
                                     <li>Attachments</li>
                                     <li>Reminders</li>
@@ -159,149 +177,59 @@
                                     <li>Chat with your own team</li>
                                     <li>Chat with the patient</li>
                                 </ul>
-                                <p class="pres2-span mt-3">All in One Place</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-inner" data-swiper-parallax="45%">
-                            <div class="slide-inner--image" style="background-color: #fdffff">
-                                <img src="images/pres3.png" class="pres3" alt="">
-                            </div>
-                            <div class="slide-inner--info pos2">
-                                <h1 class="h1" data-swiper-parallax="-400px"><span>Contract</span>  Manager</h1>
-                                <p class="pres3-span">
-                                    Coral will make a heat map of your population, and find providers who meet your needs.
-                                </p>
-                                <p class="pres3-span">
-                                    Connect with providers and build a relationship.
-                                </p>
-                                <p class="pres3-span">
-                                    Review their services and add them to your direct contract playlist for your team to use.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-inner" data-swiper-parallax="45%">
-                            <!-- fcf7ef -->
-                            <div class="slide-inner--image" style="background-color: #ecdde0;">
-                                <img src="images/pres4.png" class="pres4" alt="">
-                            </div>
-                            <div class="slide-inner--info pos3">
-                                <h1 class="h1" data-swiper-parallax="-400px">MarketPlace</h1>
-                                <p class="pres3-span">
-                                    Search for a patient need, and easily navigate through your own private 
-                                    marketplace to find the best provider for that patient.
-                                </p>
-                                <ul class="communication-list" style="display: block;">
-                                    <li>Bring your own contracts</li>
-                                    <li>Discover new providers</li>
-                                    <li>Access new contracts</li>
-                                    <li>Nationwide coverage with hundreds of thousands of bundles. </li>
-                                  
-                                </ul>
+                              
+                                <div class="parallax-item-number rg-num">.01</div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-inner" data-swiper-parallax="45%">
-                            <!-- <div class="overlay"></div> -->
-                            <div class="slide-inner--image" style="background-color: #fcf7ef ;">
-                                <img src="images/pres5.png" class="pres5" alt="">
+                  
+
+                    <!--parallax-item end-->
+                    <div class="paralax-sec-separator fl-wrap"></div>
 
 
+                    <div class="section-subtitle" data-scrollax="properties: { translateY: '250px' }">
+                        Contracts <span>//</span></div>
+                    <!--parallax-item -->
+                    <div class="parallax-item fl-wrap" data-scrollax-parent="true">
+                        <div class="row">
+                            <div class="col-md-5"  data-scrollax="properties: { translateX: '100px' }">
+                                <h3 class="mt-7"><a><span>Contract</span>  Manger </a>
+                                <small>Add existing bundles or create new ones.
+                                </small>
+                                <small>Create playlists of your bundles or upload a medicare fee schedule, and share it with your connections on Coral.</small>
+                                <small>Dynamic pricing that you can set depending on who is seeing the service.</small>
+                                </h3>
+                                <div class="parallax-item-number lf-num">02.</div>
                             </div>
-                            <div class="slide-inner--info pos1">
-                                <h1 class="h1" data-swiper-parallax="-400px">
-                                    Mobile <span>App</span>  </h1>
-                                <span class="pres1-span">
-                                    Fully integrated, and fully customizable.<br/>
-                                    Always on, so your call center doesn’t have to be.<br/>
-                                    30-50% boost in engagement in your direct contract plan.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide" data-swiper-autoplay="5000">
-                        <div class="slide-inner" data-swiper-parallax="45%">
-                            <!-- fcf7ef -->
-                            <div class="slide-inner--image" style="background-color: #E8E8EC;">
-                                <img src="images/pres6.png" class="pres6" alt="">
-                            </div>
-                            <div class="slide-inner--info pos4">
-                                <h1 class="h1" data-swiper-parallax="-400px"><span>User experience</span>  - redefined </h1>
-                                <p class="pres3-span">
-                                    Coral is extremely easy to use, and takes on average less than 10 minutes to learn.
-                                </p>
-                             
-                                <p class="pres3-span">
-                                    Our staff is dedicated to making sure you and your team know exactly what to do,
-                                     and when to do it. 
-                                </p>
-
-                                <p class="pres3-span">
-                                    Training is available anytime online with one of our deployment specialists.
-                                     For organizations with 100,000+ lives, in-person on-boarding is available.
-                                </p>
+                            <div class="col-md-7"  data-scrollax="properties: { translateX: '-100px' }">
+                                <a> <img src="images/contract.png" alt=""></a>
                             </div>
                         </div>
+                     
                     </div>
-
-
+                  
                 </div>
-                <div class="swiper-nav-btn">
-                    <div class="swiper-button-prev swiper-button-white">prev</div>
-                    <div class="swiper-button-next swiper-button-white">next</div>
-                </div>
-                <div class="expanded-timeline">
-                    <div class="expanded-timeline__counter">
-                        <div class="expanded-timeline__number">
-                            <div class="swiper-counter"></div>
-                        </div>
-                        <div class="expanded-timeline__total">
-                            <span>6</span>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="scroll-message">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 15.98" class="scroll-svg">
-                            <title>Asset 1</title>
-                            <g>
-                                <g data-name="Layer 1">
-                                    <polygon fill="#121217"
-                                        points="0 4.64 0.71 5.34 3.85 2.2 3.85 15.98 4.85 15.98 4.85 2.2 8 5.34 8.71 4.64 4.35 0.29 0 4.64">
-                                    </polygon>
-                                    <polygon fill="#121217"
-                                        points="11.65 0 11.65 13.79 8.5 10.64 7.79 11.35 12.15 15.7 16.5 11.35 15.79 10.64 12.65 13.79 12.65 0 11.65 0">
-                                    </polygon>
-                                </g>
-                            </g>
-                        </svg>Scroll
-                    </div>
-                </div>
-                <div class="edit-full-slider">
-                </div>
-            </div>
-        </main>
+
+                <div class="bg-parallax-module" data-position-top="50" data-position-left="20" data-scrollax="properties: { translateY: '-250px' }" style="top: 50%; left: 20%; transform: translateZ(0px) translateY(-159.894px);"></div>
+                <div class="bg-parallax-module" data-position-top="40" data-position-left="70" data-scrollax="properties: { translateY: '150px' }" style="top: 40%; left: 70%; transform: translateZ(0px) translateY(95.9362px);"></div>
+                <div class="bg-parallax-module" data-position-top="80" data-position-left="80" data-scrollax="properties: { translateY: '350px' }" style="top: 80%; left: 80%; transform: translateZ(0px) translateY(223.851px);"></div>
+                <div class="bg-parallax-module" data-position-top="95" data-position-left="40" data-scrollax="properties: { translateY: '-550px' }" style="top: 95%; left: 40%; transform: translateZ(0px) translateY(-351.766px);"></div>
+                
+                <div class="sec-lines"></div>
+            </section>
+            <!-- section-->
+        </div>
+        <!-- footer-->
+        <div class="height-emulator fl-wrap"></div>
+
     </div>
-
-
-
-    <script type='text/javascript'
-        src='https://theme.madsparrow.me/emilynolan/wp-content/themes/emilynolan/assets/js/vendors/anime.min.js?ver=1.0.0'></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/particlesJS.js"></script>
-    <script type='text/javascript'
-        src='https://theme.madsparrow.me/emilynolan/wp-content/themes/emilynolan/assets/js/vendors/swiper.min.js?ver=1.0.0'></script>
-
-
-    <script type='text/javascript'
-        src='https://theme.madsparrow.me/emilynolan/wp-content/themes/emilynolan/assets/js/main.js?ver=1.0.0'></script>
-
-
+    <!-- Main end -->
+    <!--=============== scripts  ===============-->
+    <script type="text/javascript" src="http://solonick.kwst.net/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://solonick.kwst.net/js/plugins.js"></script>
+    <script type="text/javascript" src="http://solonick.kwst.net/js/scripts.js"></script>
 </body>
 
 </html>

@@ -14,33 +14,123 @@
     <link type="text/css" rel="stylesheet" href="css/vendors/reset.css">
     <link type="text/css" rel="stylesheet" href="css/vendors/plugins.css">
     <link type="text/css" rel="stylesheet" href="css/vendors/style.css">
+    <link href="css/vendors/custom.css?ver=1.2.1" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="css/vendors/color.css">
     <!--=============== favicons ===============-->
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <!--loader-->
     <div class="loader-wrap">
         <div class="pin"></div>
     </div>
+
+    <!------------------------------------------------HEADER-->
+    <header class="header inner text-left">
+
+        <!-------------------------LOGO-->
+        <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a>
+
+        <!-------------------------NAVIGATION-->
+        <div class="header__nav">
+            <ul class="header__nav--list">
+                <li class="header__nav--item">
+                    <a href="index.html" class="header__nav--link active">Home</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="about.html" class="header__nav--link">About</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="platform.html" class="header__nav--link">Platform</a>
+                </li>
+
+                <!-- <li class="header__nav--item">
+                        <a href="#" class="header__nav--link">Plans</a>
+                    </li>
+    
+                    <li class="header__nav--item">
+                        <a href="#" class="header__nav--link">News</a>
+                    </li> -->
+
+                <li class="header__nav--item">
+                    <a href="contact.html" class="header__nav--link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-------------------------USER SECTION-->
+        <div class="header__user">
+            <!--------Search-->
+            <div class="search">
+                <a href="https://www.linkedin.com/company/coral/" class="linkedin linkedin-header" target="_blank">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="line"></div>
+            <!--------Login Area-->
+            <div class="login">
+                <a href="login.html" class="btn btn-primary">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-user"></use>
+                    </svg>
+                    Login</a>
+            </div>
+        </div>
+
+        <!------------------------------------------------Responsive Navigation-->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Home</a>
+                    </li>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link"><span>02</span>About</a>
+                    </li>
+                    <li class="navigation__item"><a href="presentation.html"
+                            class="navigation__link"><span>03</span>Platform</a></li>
+                    <li class="navigation__item"><a href="contact.html"
+                            class="navigation__link"><span>04</span>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
     <!--loader end-->
     <!-- Main  -->
-    <div id="main">
+
+    <div class="pres">
+        <a class="pres__back close" href="platform.html">Back</a>
+    </div>
+    <div id="main"  data-scrollax-parent="true">
         <div class="body-bg"></div>
         <!--landing-hero-container-->
         <div class="landing-hero-container fl-wrap full-height">
-            <div class="landing-logo"><img src="images/logo.png" alt=""></div>
+            <!-- <div class="landing-logo"><img src="images/logo.png" alt=""></div> -->
             <div class="landing-hero-text ">
-                <div class="landing-hero-text-block">
-                    <h1>Solonick.</h1>
-                    <h3>Creative Responsive Personal Portfolio for : <br> Designers, Musicians, Video producers,
-                        Architects, Photographers, etc.</h3>
-                    <a href="#sec2" class="custom-scroll-link btn float-btn flat-btn color-btn mar-top">View Demos</a>
+                <div class="landing-hero-text-block" data-scrollax="properties: { translateX: '-100px' }">
+                    <h1>One <span>workflow</span>  Thousands of Payers</h1>
+                    <h3>Find a provider, send them a case. Get notified when you need to check Coral. It’s that easy.
+                        On average, a three person care navigator team can manage between 400-1000 cases per month on
+                        Coral.</h3>
+                    <a href="#sec2" class="custom-scroll-link btn float-btn flat-btn color-btn mar-top">Request Demo</a>
                 </div>
             </div>
             <div class="sec-lines"></div>
-            <div class="bg" data-bg="images/bg/bg.png"></div>
+            <div class="bg" data-bg="images/workflow-1.png" ></div>
             <div class="scroll-down-dec">
                 <div class="scroll-down-wrap">
                     <div class="mousey">
@@ -54,33 +144,69 @@
         <!--landing-hero end-->
         <div class="content landing-content">
             <!-- section  -->
-            <section data-scrollax-parent="true" class="dark-bg" id="sec2">
-                <div class="section-subtitle" data-scrollax="properties: { translateY: '-150px' }">Home
-                    Demos<span>//</span></div>
-                <div class="container">
+            <section id="sec2" data-scrollax-parent="true">
+               
+                <div class="container" data-scrollax-parent="true">
+
+                    <div class="section-subtitle" data-scrollax="properties: { translateY: '-250px' }">
+                        Communication<span>//</span></div>
+
                     <!--parallax-item -->
                     <div class="parallax-item nth_chid  fl-wrap" data-scrollax-parent="true">
                         <div class="row">
-                            <div class="col-md-7">
-                                <a href="site/index.html" target="_blank"><img src="images/bg/1.jpg" alt=""></a>
+                            <div class="col-md-6 mt-6">
+                                <a><img src="images/pres1.png"  data-scrollax="properties: { translateX: '-100px' }" alt=""></a>
                             </div>
-                            <div class="col-md-5"></div>
+                            <div class="col-md-6">
+                               
+                                <h3 class="mt-3" data-scrollax="properties: { translateX: '100px' }"><a>
+                                        All of your <span> communication </span> - In one place
+                                    </a>
+                                    <small>
+                                        Good bye email threads, hello Coral Communication. Manage all of your referrals, for all providers in one place.
+                                    
+                                    </small>
+                                </h3>
+                                <ul class="communication-list"  data-scrollax="properties: { translateX: '100px' }">
+                                    <li>@ mentions</li>
+                                    <li>Attachments</li>
+                                    <li>Reminders</li>
+                                    <li>Notifications </li>
+                                    <li>Chat with the provider</li>
+                                    <li>Chat with your own team</li>
+                                    <li>Chat with the patient</li>
+                                </ul>
+                              
+                                <div class="parallax-item-number rg-num">.01</div>
+                            </div>
                         </div>
-                        <div class="parallax-item-number rg-num">.01</div>
-                        <h3><a href="site/index.html" target="_blank">Half Slider</a></h3>
                     </div>
+
+                  
+
                     <!--parallax-item end-->
                     <div class="paralax-sec-separator fl-wrap"></div>
+
+
+                    <div class="section-subtitle" data-scrollax="properties: { translateY: '250px' }">
+                        Contracts <span>//</span></div>
                     <!--parallax-item -->
                     <div class="parallax-item fl-wrap" data-scrollax-parent="true">
                         <div class="row">
-                            <div class="col-md-5"></div>
-                            <div class="col-md-7">
-                                <a href="site/index2.html" target="_blank"> <img src="images/bg/2.jpg" alt=""></a>
+                            <div class="col-md-5"  data-scrollax="properties: { translateX: '100px' }">
+                                <h3 class="mt-3"><a><span>Contract</span>  Manger </a>
+                                <small>Add existing bundles or create new ones.
+                                </small>
+                                <small>Create playlists of your bundles or upload a medicare fee schedule, and share it with your connections on Coral.</small>
+                                <small>Dynamic pricing that you can set depending on who is seeing the service.</small>
+                                </h3>
+                                <div class="parallax-item-number lf-num">02.</div>
+                            </div>
+                            <div class="col-md-7"  data-scrollax="properties: { translateX: '-100px' }">
+                                <a> <img src="images/contract.png" alt=""></a>
                             </div>
                         </div>
-                        <h3><a href="site/index2.html" target="_blank">Half Image</a></h3>
-                        <div class="parallax-item-number lf-num">02.</div>
+                     
                     </div>
                     <!--parallax-item end-->
                     <div class="paralax-sec-separator fl-wrap"></div>
@@ -163,29 +289,19 @@
                     <!--parallax-item end-->
                     <div class="paralax-sec-separator fl-wrap"></div>
                 </div>
+
+                <div class="bg-parallax-module" data-position-top="50" data-position-left="20" data-scrollax="properties: { translateY: '-250px' }" style="top: 50%; left: 20%; transform: translateZ(0px) translateY(-159.894px);"></div>
+                <div class="bg-parallax-module" data-position-top="40" data-position-left="70" data-scrollax="properties: { translateY: '150px' }" style="top: 40%; left: 70%; transform: translateZ(0px) translateY(95.9362px);"></div>
+                <div class="bg-parallax-module" data-position-top="80" data-position-left="80" data-scrollax="properties: { translateY: '350px' }" style="top: 80%; left: 80%; transform: translateZ(0px) translateY(223.851px);"></div>
+                <div class="bg-parallax-module" data-position-top="95" data-position-left="40" data-scrollax="properties: { translateY: '-550px' }" style="top: 95%; left: 40%; transform: translateZ(0px) translateY(-351.766px);"></div>
+                
                 <div class="sec-lines"></div>
             </section>
             <!-- section-->
         </div>
         <!-- footer-->
         <div class="height-emulator fl-wrap"></div>
-        <footer class="main-footer fixed-footer landing-footer">
-            <!--footer-inner-->
-            <div class="footer-inner fl-wrap">
-                <div class="container">
-                    <div class="partcile-dec" data-parcount="140"></div>
-                    <div class="landing-inner fl-wrap">
-                        <h2>Start Your Website Today</h2>
-                        <h4>Creative Powerful Portfolios , Audio Player , FontAwesone 5PRO , Incredible Parallax Effects
-                            , Instagram Feed , Twitter Feed , Working Ajax Contact and Subscribe Form , Coming Soon Page
-                            , and more ... </h4>
-                        <a href="#" class="btn float-btn trsp-btn" target="_blank">Buy Solonick 10$</a>
-                    </div>
-                </div>
-            </div>
-            <!--footer-inne endr-->
-        </footer>
-        <!-- footer end-->
+
     </div>
     <!-- Main end -->
     <!--=============== scripts  ===============-->
