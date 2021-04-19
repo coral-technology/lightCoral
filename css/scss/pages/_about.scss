@@ -1,6 +1,6 @@
 //-------------------------------------------ABOUT US
 .aboutus {
-    padding: 8rem 10rem 0;
+    padding: 5rem 10rem 0;
     display: grid;
     grid-template-columns: 1.5fr 0.7fr;
     gap: 4rem;
@@ -38,7 +38,7 @@
 //-------------------------------------------HISTORY
 
 .history {
-    padding: 5rem 10rem 7rem;
+    padding: 5rem 0 7rem;
     // background-color: $off-white;
 
     @include responsive(tab-port) {
@@ -337,3 +337,5 @@
         }
     }
 }
+
+

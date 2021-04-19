@@ -614,6 +614,21 @@ button:focus {
   color: #fff;
 }
 
+.head-6 {
+  font-size: 3.2rem;
+  color: #121217;
+  font-weight: 600;
+}
+
+.head-6 small {
+  display: block;
+  font-size: 1.8rem;
+}
+
+.head-6--white {
+  color: #fff;
+}
+
 .heading-primary {
   color: #121217;
   text-transform: uppercase;
@@ -1556,8 +1571,8 @@ select.form-control {
   margin: 0.5rem 0.2rem 0.5rem 0;
   font-size: 1.2rem;
   color: #cbcbd9;
-  -webkit-transform: translateY(-7.5rem);
-          transform: translateY(-7.5rem);
+  -webkit-transform: translateY(-6.5rem);
+          transform: translateY(-6.5rem);
 }
 
 input:placeholder-shown + .label {
@@ -2317,6 +2332,34 @@ input[type="file"] {
 
 .bx-wrapper .bx-next {
   background: url(../images/right-arrow.png) no-repeat center !important;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.brand-carousel {
+  background: aliceblue;
+  margin-top: 15%;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.owl-dot {
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: #878787 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.owl-dot.active {
+  background-color: #000 !important;
 }
 
 /* START TOOLTIP STYLES */
@@ -4106,8 +4149,20 @@ input[type="file"] {
   }
 }
 
+.login .form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #cbcbd9;
+  border-radius: 0;
+}
+
+.login .form-group {
+  margin-bottom: 0;
+}
+
 .aboutus {
-  padding: 8rem 10rem 0;
+  padding: 5rem 10rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.5fr 0.7fr;
@@ -4159,7 +4214,7 @@ input[type="file"] {
 }
 
 .history {
-  padding: 5rem 10rem 7rem;
+  padding: 5rem 0 7rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -4801,8 +4856,8 @@ input[type="file"] {
   position: relative;
   z-index: 6;
   display: block;
-  width: 47%;
-  margin: 5rem auto 0;
+  width: 40%;
+  margin: 5rem 4rem 0 0;
 }
 
 .pres__four {
@@ -4919,13 +4974,13 @@ input[type="file"] {
 }
 
 .pres__seven-pricing > div strong {
-  font-size: 2.6rem;
+  font-size: 3.5rem;
   color: #f86f6f;
 }
 
 .pres__seven-pricing > div a {
   display: inline-block;
-  width: 40%;
+  width: 25rem;
   margin: auto;
 }
 
@@ -4938,10 +4993,10 @@ input[type="file"] {
 .pres__seven-pricing .plan-b-img {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.6fr 1.4fr;
-      grid-template-columns: 0.6fr 1.4fr;
+  -ms-grid-columns: 0.7fr 1.4fr;
+      grid-template-columns: 0.7fr 1.4fr;
   gap: 1rem;
-  margin: 3rem auto 2rem;
+  margin: 1.5rem auto 1rem;
 }
 
 .pres__seven-pricing .plan-b-img img {

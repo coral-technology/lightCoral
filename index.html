@@ -13,6 +13,10 @@
     <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
     <link rel="stylesheet" href="css/vendors/slider.css">
 
+
+
+
+
     <link rel="icon" type="image/x-icon" href="images/icon.png">
 
 </head>
@@ -235,7 +239,7 @@
 
 
             </div>
-   
+
 
         </div>
 
@@ -304,6 +308,8 @@
             </div>
         </section>
 
+
+
         <!------------------------------Platform------------>
         <section class="platform">
             <h2 class="head-2">The Coral <span>Ecosystem</span> </h2>
@@ -323,7 +329,6 @@
                 Payers save money. </p>
             <a class="btn btn-white-border">SCHEDULE PRESENTATION DEMO</a>
         </section>
-
         <!--------------------------Testimonial-------->
         <section class="testimonials">
             <div class="testimonials-bg"></div>
@@ -374,6 +379,24 @@
                             Keith Smith,<br /> M.D, Founder & Anesthesiologist - Surgery Center of Oklahoma
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------Mobile App-------->
+        <section class="app">
+            <img src="images/app.png" alt="Coral Mobile App For Healthcare" class="app__img">
+            <div class="app__download">
+                <h1 class="heading-secondary heading-secondary--white">Coral on demand</h1>
+                <p>
+                    Our mission is simple: We think health plans should know the price of medical services up front,
+                    and providers should get paid extremely fast,
+                    without having to fight for what they’ve done. So we’ve built
+                </p>
+
+                <div class="app__download-store">
+                    <a> <img src="images/google-play.png" alt="Coral Mobile App For Healthcare" class="app__img"></a>
+                    <a> <img src="images/app-store.png" alt="Coral Mobile App For Healthcare" class="app__img"></a>
                 </div>
             </div>
         </section>
@@ -444,25 +467,6 @@
                 </div>
             </div>
 
-        </section>
-
-
-        <!--------------------------Mobile App-------->
-        <section class="app">
-            <img src="images/app.png" alt="Coral Mobile App For Healthcare" class="app__img">
-            <div class="app__download">
-                <h1 class="heading-secondary heading-secondary--white">Coral on demand</h1>
-                <p>
-                    Our mission is simple: We think health plans should know the price of medical services up front,
-                    and providers should get paid extremely fast,
-                    without having to fight for what they’ve done. So we’ve built
-                </p>
-
-                <div class="app__download-store">
-                    <a> <img src="images/google-play.png" alt="Coral Mobile App For Healthcare" class="app__img"></a>
-                    <a> <img src="images/app-store.png" alt="Coral Mobile App For Healthcare" class="app__img"></a>
-                </div>
-            </div>
         </section>
 
 
@@ -682,9 +686,13 @@
         $(document).ready(function () {
             $('.slider1').bxSlider({
                 slideWidth: 230,
-                minSlides: 2,
+                minSlides: 1,
                 maxSlides: 5,
-                slideMargin: 10
+                slideMargin: 10,
+                auto: true,
+                pause: 3000,
+                speed: 1000,
+                autoHover: true,
             });
         });
 

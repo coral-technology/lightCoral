@@ -1,11 +1,4 @@
-/* ----------------------------------
-jQuery Timelinev 1.1.0
-tested with jQuery v2.2.4
 
-Copyright 2017, Created by Xavier Raspall Gonzalez
-Free under the MIT license.
-http://www.opensource.org/licenses/mit-license.php
----------------------------------- */
 
 jQuery.fn.timelinev = function(options){
     // plugin settings
@@ -17,7 +10,7 @@ jQuery.fn.timelinev = function(options){
         dateHtml: 		 'h2',
         textHtml: 		 'p',
         dateActiveClass: '.active',
-        datesSpeed:      '250',
+        datesSpeed:      '10000',
     }, options);
         
 

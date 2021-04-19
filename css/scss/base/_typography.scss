@@ -92,6 +92,22 @@ span {
 }
 
 
+//---------------------------------------------------------H6
+.head-6 {
+  font-size: 3.2rem;
+  color: $black;
+  font-weight: 600;
+  // text-transform: uppercase;
+small {
+  display: block;
+  font-size: 1.8rem;
+}
+  //-----------------------------WHITE Head 1
+  &--white {
+    color: $white;
+  }
+}
+
 .heading-primary {
   color: $black;
   text-transform: uppercase;
