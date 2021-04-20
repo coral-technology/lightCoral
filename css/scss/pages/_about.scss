@@ -38,7 +38,7 @@
 //-------------------------------------------HISTORY
 
 .history {
-    padding: 5rem 0 7rem;
+    padding: 5rem 10rem 7rem;
     // background-color: $off-white;
 
     @include responsive(tab-port) {
@@ -160,7 +160,7 @@
         position: absolute;
         left: -60rem;
         top: 4rem;
-        height: 30rem;
+        height: 20rem;
         @include responsive(tab-port) {
             position: absolute;
             left: -40rem;

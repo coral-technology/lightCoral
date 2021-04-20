@@ -56,30 +56,7 @@ jQuery.fn.timelinev = function(options){
             }
         });
 
-        //Bind scroll
-        settings.timelineDiv.bind('mousewheel DOMMouseScroll', function (event) {
-            event.preventDefault();
-
-            if ((event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) && (dateActive-1)!==0) {
-                divsCont.removeClass('active');
-                $(divsCont[(dateActive-1)]).addClass('active');
-
-                incrementDate();
-                dateActive=dateActive-1;
-
-            }
-
-            if ((event.originalEvent.wheelDelta < 0 || event.originalEvent.detail > 0) && (dateActive+1)!==(dates.length-1)){
-                divsCont.removeClass('active');
-                $(divsCont[(dateActive+1)]).addClass('active');
-
-                if ((dateActive+1)!=(divsCont.length-2)){
-                    decrementDate();
-                }
-
-                dateActive=dateActive+1;
-            }
-        });
+     
 
         //Parse dates
         function parseFecha(fechasHTML) {

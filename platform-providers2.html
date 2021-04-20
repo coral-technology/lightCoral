@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Coral - Platform for Payers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Nunito Sans Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <style>
+        .scrolltop {
+            bottom: 12rem !important;
+        }
+
+        #particles-js {
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: 1;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='top'></div>
+
+    <!------------------------------------------------HEADER-->
+    <header class="header inner">
+
+        <!-------------------------LOGO-->
+        <a href="index.html"><img src="images/logo.png" alt="" class="header__logo"></a>
+
+        <!-------------------------NAVIGATION-->
+        <div class="header__nav">
+            <ul class="header__nav--list">
+                <li class="header__nav--item">
+                    <a href="index.html" class="header__nav--link">Home</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="about.html" class="header__nav--link">About</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="platform.html" class="header__nav--link active">Platform</a>
+                </li>
+
+                <!-- <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">Plans</a>
+                </li>
+
+                <li class="header__nav--item">
+                    <a href="#" class="header__nav--link">News</a>
+                </li> -->
+
+                <li class="header__nav--item">
+                    <a href="contact.html" class="header__nav--link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-------------------------USER SECTION-->
+        <div class="header__user">
+            <!--------Search-->
+            <div class="search">
+                <a href="https://www.linkedin.com/company/coral/" class="linkedin linkedin-header" target="_blank">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-linkedin">
+                        </use>
+                    </svg>
+                </a>
+            </div>
+            <div class="line"></div>
+            <!--------Login Area-->
+            <div class="login">
+                <a href="login.html" class="btn btn-primary">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-user">
+                        </use>
+                    </svg>
+                    Login</a>
+            </div>
+        </div>
+
+        <!------------------------------------------------Responsive Navigation-->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Home</a>
+                    </li>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link"><span>02</span>About</a>
+                    </li>
+                    <li class="navigation__item"><a href="presentation.html"
+                            class="navigation__link"><span>03</span>Platform</a></li>
+                    <li class="navigation__item"><a href="contact.html"
+                            class="navigation__link"><span>04</span>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+
+
+
+        <div class="pres" id="target">
+            <a class="pres__back close" href="platform.html">Back</a>
+
+            <div class="pres__zero">
+                <div class="pres__zero-text" data-aos="fade-down">
+                    <h1 class="head-4 head-4--black">
+                        One <span>workflow</span> -
+                        Thousands of Payers </h1>
+                    <p class="text-primary">
+                        Find a payer, send them a case. Get notified when you need to check Coral. It’s
+                        that easy.<br />
+                        On average, a three person care navigator team can manage between 400-1000 cases per
+                        month on Coral.
+                    </p>
+                </div>
+
+
+                <div class="pres__zero-steps" data-aos="fade-up">
+
+                    <div class="pres__zero-steps--bottom">
+                        <div class="icon-pres">
+                            <img src="images/start.svg" alt="">
+                        </div>
+                        <div class="icon-text one">
+                            <h2>01
+                                <small>Start</small>
+                            </h2>
+                            <p>
+                                Eligibility file
+                                Intake form
+                                Patient information
+                                Referring doctor
+                                Reason for referral
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pres__zero-steps--top">
+                        <div class="icon-pres">
+                            <img src="images/Qualify.svg" alt="">
+                        </div>
+                        <div class="icon-text one">
+                            <h2>
+                                <small>Qualify</small>
+                                02
+
+                            </h2>
+                            <p>
+                                Select Patients ,
+                                Choose administrations,
+                                Choose provider,
+                                Choose doctor
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pres__zero-steps--bottom">
+                        <div class="icon-pres">
+                            <img src="images/Schedule.svg" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h2>03
+                                <small>Schedule</small>
+                            </h2>
+                            <p>
+                                Availability,
+                                Updates,
+                                Messaging,
+                                Conflicts
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pres__zero-steps--top">
+                        <div class="icon-pres">
+                            <img src="images/Voucher.svg" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h2>
+                                <small>Voucher</small>
+                                04
+                            </h2>
+                            <p>
+                                Pricing,
+                                CPT codes,
+                                Bundled pricing,
+                                One click voucher creation,
+                                Voucher Management
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="pres__zero-steps--bottom">
+                        <div class="icon-pres">
+                            <img src="images/Procedure.svg" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h2>05
+                                <small>Procedure</small>
+                            </h2>
+                            <p>
+                                Complications,
+                                New CPT codes,
+                                Diagnosis codes,
+                                Check in
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pres__zero-steps--top">
+                        <div class="icon-pres">
+                            <img src="images/Invoicing.svg" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h2>
+                                <small>Invoicing</small>
+                                06
+                            </h2>
+                            <p>
+                                Pricing,
+                                Exceptions,
+                                Instantly,
+                                Generated
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pres__zero-steps--bottom">
+                        <div class="icon-pres">
+                            <img src="images/Payment.svg" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h2>07
+                                <small>Payment</small>
+                            </h2>
+                            <p>
+                                Instant payment,
+                                Output to claims processor,
+                                Analytics on all payments,
+                                Instant report generators
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="pres__two" id="communication">
+
+                <h1 class="head-4 head-4--black" data-aos="fade-right">
+                    All of your <span>communication</span> - In one place
+                </h1>
+
+                <div class="pres__two-text">
+                    <div data-aos="fade-right">
+                        <p class="text-primary">
+                            Good bye email threads, hello Coral Communication. Manage all of your referrals, for
+                            all providers in one place.
+                        </p>
+                        <ul class="communication-list">
+                            <li>@ mentions</li>
+                            <li>Attachments</li>
+                            <li>Reminders</li>
+                            <li>Notifications </li>
+                            <li>Chat with the provider</li>
+                            <li>Chat with your own team</li>
+                            <li>Chat with the patient</li>
+                        </ul>
+                        <p class="pres2-span mt-2"><strong>All in One Place</strong> </p>
+                    </div>
+
+                    <img src="images/pres2.png" data-aos="fade-left" class="pres__two-img"
+                        alt="ALL OF YOUR COMMUNICATION - IN ONE PLACE">
+                </div>
+
+            </div>
+
+            <div class="pres__three" id="contract">
+
+                <img src="images/pres3.png" class="pres__three-img" data-aos="fade-up" alt="Contract Manager">
+                <div class="pres__three-text" data-aos="fade-down">
+                    <h1 class="head-4 head-4--black" data-swiper-parallax="-400px"><span>Contract</span>
+                        Manager</h1>
+                    <p class="text-primary">
+                        Coral will make a heat map of your population, and find providers who meet your needs.
+                    </p>
+                    <p class="text-primary">
+                        Connect with providers and build a relationship.
+                    </p>
+                    <p class="text-primary">
+                        Review their services and add them to your direct contract playlist for your team to use.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pres__four prov2" id="marketplace">
+
+
+                <div class="pres__four-text">
+                    <div data-aos="fade-up">
+                        <h1 class="head-4 head-4--black">Get Verified, Get <span>paid</span> </h1>
+                        <p class="text-primary">
+                            You can connect with anyone you want on Coral, and use your own contract language.
+                            Or you can connect and become verified using the the Coral Standard Agreement.
+                        </p>
+                        <ul class="communication-list" style="display: block;">
+                            <li>Receive more case volume, with the confidence when you become verified on Coral.</li>
+                            <li>14 days or less for payment to be sent.</li>
+                            <li>No fighting over billed charges.</li>
+                            <li>The ease of one contract, for all parties. </li>
+
+                        </ul>
+                        <p class="text-primary">
+                            Verified Providers are eligible to receive payments from Coral equal to .25% of billed
+                            charges.
+                        </p>
+                    </div>
+                    <img src="images/pres7.png" data-aos="fade-down" class="pres__four-img" alt="MarketPlace">
+                </div>
+
+            </div>
+
+
+            <div class="pres__four prov" id="marketplace">
+
+
+                <div class="pres__four-text">
+                    <div data-aos="fade-up">
+                        <h1 class="head-4 head-4--black"><span>MarketPlace</span> </h1>
+                        <p class="text-primary">
+                            Search for a patient need, and easily navigate through your own private
+                            marketplace to find the best provider for that patient.
+                        </p>
+                        <ul class="communication-list" style="display: block;">
+                            <li>Bring your own contracts</li>
+                            <li>Discover new providers</li>
+                            <li>Access new contracts</li>
+                            <li>Nationwide coverage with hundreds of thousands of bundles. </li>
+
+                        </ul>
+                    </div>
+                    <img src="images/pres4.png" data-aos="fade-down" class="pres__four-img" alt="MarketPlace">
+                </div>
+
+            </div>
+
+
+
+            <div class="pres__six" id="experience">
+
+
+                <div class="pres__six-text">
+                    <div data-aos="zoom-in-left">
+                        <h1 class="head-4 head-4--black"><span>User experience</span> - redefined </h1>
+                        <p class="text-primary mt-5">
+                            Coral is extremely easy to use, and takes on average less than 10 minutes to learn.
+                        </p>
+
+                        <p class="text-primary">
+                            Our staff is dedicated to making sure you and your team know exactly what to do,
+                            and when to do it.
+                        </p>
+
+                        <p class="text-primary">
+                            Training is available anytime online with one of our deployment specialists.
+                            For organizations with 100,000+ lives, in-person on-boarding is available.
+                        </p>
+                    </div>
+                    <img src="images/pres6.png" data-aos="zoom-in-right" class="pres__six-img"
+                        alt="User experience - redefined">
+                </div>
+
+            </div>
+
+            <div class="pres__seven" id="Pricing">
+
+
+                <div class="pres__seven-pricing prov">
+
+                    <div class="bgss">
+                        <div class="rec-big">
+                            <img src="images/rec.png" alt="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="plan-a prov" data-aos="fade-down-right">
+                        <div style="background-color: #f8f8f8;">
+                            <h1 class="head-6 ">Pricing</h1>
+                            <p>
+                                Choose plan that suits your business- Just kidding,
+                                there is only one plan for providers and it’s free.
+                            </p>
+                        </div>
+                        <img src="images/pricingprov.png" class="plan-a-img"
+                            alt="Coral Web App + marketPlace + Mobile App">
+
+                    </div>
+                    <div class="plan-b" data-aos="fade-down-left">
+                        <h1 class="head-6">Basic
+                            <small>Free</small>
+                        </h1>
+                        <p>
+                            Includes Network Features
+                        </p>
+
+                        <ul class="communication-list-small" style="display: block;">
+                            <li>Unlimited Connections</li>
+                            <li>Unlimited Locations</li>
+                            <li>Unlimited Users</li>
+                            <li>More Case Volume</li>
+                        </ul>
+                        <a href="#" class="btn btn-white">Sign Up</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!--------------------------SCROLL TO TOP-------->
+    <div class='scrolltop'>
+        <div class='scroll icon'>
+            <svg>
+                <use xlink:href="images/sprite.svg#icon-rocket"></use>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particlesJS.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animation.js"></script>
+
+    <script>
+        // AOS.init({
+        //     duration: 1000
+        // });
+
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+            transition: "ease-In-Out",
+            delay: 60,
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
