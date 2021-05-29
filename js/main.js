@@ -134,3 +134,23 @@ $(window).scroll(function () {
 })( jQuery, window, document );
 
 
+
+
+
+//------------POPUP
+
+$('.Modal-btn').click(function(){
+    var buttonId = $(this).attr('id');
+    $('#modal-container').removeAttr('class').addClass(buttonId);
+    $('body').addClass('modal-active');
+  })
+  
+  $('.modal-close').click(function(){
+    $('#modal-container').addClass('out');
+    $('body').removeClass('modal-active');
+  });
+
+  $('.close-content').click(function(){
+    $('#modal-container').addClass('out');
+    $('body').removeClass('modal-active');
+  });

@@ -2,7 +2,7 @@
     padding: 1rem 2.5rem;
     text-transform: uppercase;
     font-size: 1.4rem;
-    border-radius: 0.6rem;
+    border-radius: 0.4rem;
     position: relative;
     border: none;
     z-index: 5;
@@ -211,4 +211,10 @@ a.link {
             fill: $white;
         }
     }
+}
+
+
+.btns .btn:last-child {
+    margin-left: 1rem;
+    padding: 1rem 6rem;
 }

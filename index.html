@@ -12,13 +12,8 @@
     <!-- Main CSS -->
     <link href="css/main.css?ver=1.2.1" rel="stylesheet" />
     <link rel="stylesheet" href="css/vendors/slider.css">
-
-
-
-
-
     <link rel="icon" type="image/x-icon" href="images/icon.png">
-
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
 </head>
 
 <body>
@@ -127,7 +122,13 @@
             <div class="jumbotron__btns">
 
                 <a href="platform.html" class="btn btn-primary--border">LEARN MORE</a>
-                <a href="#" class="btn btn-primary">REQUEST DEMO</a>
+             
+
+                <a id="one" class="Modal-btn btn btn-primary">REQUEST DEMO
+                    <!-- <svg class="icon-med">
+                        <use xlink:href="images/sprite.svg#icon-eye"></use>
+                    </svg> -->
+                </a>
             </div>
         </div>
         <!--------------------------status-------->
@@ -672,9 +673,78 @@
     </div>
 
 
+
+
+    <div id="modal-container">
+        <div class="modal-close"></div>
+        <div class="modal-background">
+            <div class="custom-modal md">
+                <div class="close-content">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-close"></use>
+                    </svg>
+                </div>
+
+                <h4 class="head-modal">
+                    Request Demo
+                </h4>
+
+                <div class="contacts__form">
+                    <div class="form-group">
+    
+                        <input type="text" id="name" placeholder="Name*" class="form-control">
+                        <!-- <label for="name" class="label">Name</label> -->
+                    </div>
+    
+    
+                    <div class="form-group">
+                   
+                            <input type="text" placeholder="Email*" id="Email" class="form-control">
+                            <!-- <label for="Email" class="label">Email</label> -->
+                       
+                     
+                    </div>
+    
+
+                    <div class="form-group">
+                      
+                            <input type="text" placeholder="Phone" id="Phone" class="form-control">
+                            <!-- <label for="Phone" class="label">Phone</label> -->
+                       
+                    </div>
+    
+                
+                    <div class="form-group">
+                        <textarea style="resize: none;" name="" id="Message" placeholder="Cover letter (optional)" id=""
+                            cols="30" rows="3" class="form-control"></textarea>
+    
+                    </div>
+    
+    
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                    </div>
+    
+                    <div class="btns mt-1">
+                        <button class="btn btn-white">
+                            Cancel
+                        </button>
+                        <button class="btn btn-primary">Send
+                           
+                        </button>
+                    </div>
+                </div>
+
+            
+
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <!-- Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>

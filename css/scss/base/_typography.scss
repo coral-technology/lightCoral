@@ -184,6 +184,41 @@ small {
   }
 }
 
+
+
+
+//---------------------------------------------------------Head Modal
+.head-modal {
+  position: relative;
+}
+
+.head-modal,
+.head-modal a,
+.head-modal a:visited,
+.head-modal a:link {
+  font-size: 2.4rem;
+  color: $color-primary;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  small {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: $grey;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  & a:hover {
+    color: $color-primary;
+  }
+
+  //-----------------------------WHITE H4
+  &--white {
+    color: $white;
+  }
+}
+
 //-----------------------------PRIMARY TEXT
 .text-primary {
   font-size: 1.4rem;
