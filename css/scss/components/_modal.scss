@@ -8,6 +8,7 @@
 #modal-container {
     position: fixed;
     overflow-y: auto;
+    @include scroll;
     height: 100%;
     width: 100%;
     top: 0;
@@ -48,6 +49,7 @@
             position: relative;
             z-index: 5;
             margin-top: 7rem;
+            margin-bottom: 7rem;
             text-align: left;
 
             &.lg {

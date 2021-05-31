@@ -20,11 +20,11 @@
 
     &-img {
         position: absolute;
-        top: 6rem;
+        top: 10rem;
         left: 58%;
         transform: translateX(-58%);
         z-index: 0;
-        width: 77%;
+        width: 87%;
 
         @include responsive(tab-port) {
             width: 90%;
@@ -48,6 +48,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             line-height: 5rem;
+           
             span {
                 font-size: 3.4rem;
                 font-weight: 300;
@@ -96,12 +97,16 @@
         @include responsive(phone) {
             margin-top: 2rem;
         }
+        // background-color: rgba($white,0.7);
+        padding: 0 !important;
     }
 
     &__title {
         animation: left 1.5s cubic-bezier(0.92, 0.18, 0, 0.94);
         color: $black;
         text-align: center;
+        text-shadow: 0 1.5rem 0.5rem rgba($black,0.3);
+   
     }
 
     &__des {
@@ -112,7 +117,7 @@
         margin: 2.5rem 0 0rem;
         animation: right 1.5s cubic-bezier(0.92, 0.18, 0, 0.94);
         text-align: center;
-
+        text-shadow: 0 1.5rem 0.5rem rgba($black,0.3);
     }
 
     &__btns {
