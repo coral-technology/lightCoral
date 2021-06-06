@@ -362,7 +362,14 @@ html {
 
     &__four {
         background-color: $white;
-
+        &::after {
+            @include after-before;
+            height: 100vh;
+            bottom: 0;
+            top: auto;
+            background-color: $white;
+            z-index: 0;
+        }
         &-text {
             margin-top: 5rem;
             display: flex;
@@ -445,10 +452,62 @@ html {
             width: 70%;
         }
 
+        &-top {
+            margin-top: 3rem;
+            background-color: $white;
+            border-radius: 20px;
+            box-shadow: $shadow;
+            padding: 3rem;
+
+            &-grid {
+                display: flex;
+
+                &-left {
+                    text-align: center;
+                    p {
+                        margin: 6rem 0;
+                    }
+                    span {
+                        display: block;
+                        margin-top: 3rem;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        color: $black;
+                    }
+                    strong {
+                        font-size: 3.5rem;
+                        color: $color-primary;
+                    }
+
+                    .text-footer {
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+            &-footer {
+                p {
+                    text-align: center;
+                    color: $color-primary;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                }
+               
+            }
+        }
+        &-innertitle {
+            font-size: 3.3rem;
+            font-weight: 600;
+            text-align: center;
+            color: $black;
+            line-height: 4.5rem;
+            margin: 5rem 0 0;
+        }
+
         &-pricing {
             margin-top: 5rem;
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-columns: 1fr 1fr;
             gap: 4rem;
             width: 100%;
             &.prov {
@@ -461,7 +520,7 @@ html {
                 .bgss {
                     position: absolute;
                     width: 100%;
-                    
+
                     top: 2.5rem;
                     left: 50%;
                     transform: translateX(-50%);
@@ -475,7 +534,6 @@ html {
                         top: 0;
                         left: 0;
                     }
-                
                 }
 
                 h1 {
