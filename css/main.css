@@ -1543,6 +1543,16 @@ button:focus {
   font-weight: 300;
 }
 
+.text-big {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #121217;
+}
+
+.text-big--white {
+  color: #fff;
+}
+
 .text-small {
   font-size: 1.2rem;
   font-weight: 300;
@@ -2710,6 +2720,7 @@ input[type="file"] {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0 !important;
 }
 
@@ -6803,8 +6814,8 @@ ul.communication-list-small li a:hover {
 .contactus {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.2fr 0.8fr;
   padding: 5rem 10rem;
 }
 
@@ -6825,6 +6836,10 @@ ul.communication-list-small li a:hover {
   .contactus-details {
     margin-bottom: 3rem;
   }
+}
+
+.contactus2 {
+  padding: 5rem 10rem;
 }
 
 .careers {

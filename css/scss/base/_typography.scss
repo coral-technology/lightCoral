@@ -243,6 +243,19 @@ small {
   }
 }
 
+//-----------------------------BIG TEXT
+.text-big {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: $black;
+  //-----------------------------WHITE SMALL TEXT
+  &--white {
+    color: $white;
+  }
+}
+
+
+
 //-----------------------------SMALL TEXT
 .text-small {
   font-size: 1.2rem;
