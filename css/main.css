@@ -2763,7 +2763,6 @@ input[type="file"] {
   -webkit-animation: right 1.5s cubic-bezier(0.92, 0.18, 0, 0.94);
           animation: right 1.5s cubic-bezier(0.92, 0.18, 0, 0.94);
   text-align: center;
-  text-shadow: 0 1.5rem 0.5rem rgba(18, 18, 23, 0.3);
 }
 
 .jumbotron__btns {
